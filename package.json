@@ -1,0 +1,18 @@
+{
+  "name": "systemjs-config-builder",
+  "version": "0.0.1",
+  "description": "Generate SystemJS config files from node_modules",
+  "main": "lib/index.js",
+  "repository": {
+    "url": "https://github.com/alexisvincent/systemjs-config-builder",
+    "type": "git"
+  },
+  "author": "Alexis Vincent <alexisjohnvincent@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "graceful-fs": "^4.1.10",
+    "jspm-npm": "^0.30.1",
+    "lodash": "^4.17.1"
+  }
+}

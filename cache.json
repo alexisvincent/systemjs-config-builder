@@ -1,0 +1,4305 @@
+{
+  "tree": {
+    "name": "systemjs-config-builder",
+    "deps": [
+      {
+        "name": "align-text",
+        "deps": [],
+        "version": "0.1.4"
+      },
+      {
+        "name": "amdefine",
+        "deps": [],
+        "version": "1.0.1"
+      },
+      {
+        "name": "ansi-regex",
+        "deps": [],
+        "version": "2.0.0"
+      },
+      {
+        "name": "ansi-styles",
+        "deps": [],
+        "version": "2.2.1"
+      },
+      {
+        "name": "asn1",
+        "deps": [],
+        "version": "0.2.3"
+      },
+      {
+        "name": "assert-plus",
+        "deps": [],
+        "version": "0.2.0"
+      },
+      {
+        "name": "async",
+        "deps": [],
+        "version": "0.2.10"
+      },
+      {
+        "name": "asynckit",
+        "deps": [],
+        "version": "0.4.0"
+      },
+      {
+        "name": "aws-sign2",
+        "deps": [],
+        "version": "0.6.0"
+      },
+      {
+        "name": "aws4",
+        "deps": [],
+        "version": "1.5.0"
+      },
+      {
+        "name": "babel-code-frame",
+        "deps": [],
+        "version": "6.16.0"
+      },
+      {
+        "name": "babel-core",
+        "deps": [],
+        "version": "6.18.2"
+      },
+      {
+        "name": "babel-generator",
+        "deps": [],
+        "version": "6.18.0"
+      },
+      {
+        "name": "babel-helper-hoist-variables",
+        "deps": [],
+        "version": "6.18.0"
+      },
+      {
+        "name": "babel-helpers",
+        "deps": [],
+        "version": "6.16.0"
+      },
+      {
+        "name": "babel-messages",
+        "deps": [],
+        "version": "6.8.0"
+      },
+      {
+        "name": "babel-plugin-transform-cjs-system-require",
+        "deps": [],
+        "version": "0.1.1"
+      },
+      {
+        "name": "babel-plugin-transform-cjs-system-wrapper",
+        "deps": [],
+        "version": "0.2.1"
+      },
+      {
+        "name": "babel-plugin-transform-es2015-modules-systemjs",
+        "deps": [],
+        "version": "6.18.0"
+      },
+      {
+        "name": "babel-plugin-transform-global-system-wrapper",
+        "deps": [],
+        "version": "0.0.1"
+      },
+      {
+        "name": "babel-plugin-transform-system-register",
+        "deps": [],
+        "version": "0.0.1"
+      },
+      {
+        "name": "babel-register",
+        "deps": [],
+        "version": "6.18.0"
+      },
+      {
+        "name": "babel-runtime",
+        "deps": [],
+        "version": "6.18.0"
+      },
+      {
+        "name": "babel-template",
+        "deps": [],
+        "version": "6.16.0"
+      },
+      {
+        "name": "babel-traverse",
+        "deps": [],
+        "version": "6.18.0"
+      },
+      {
+        "name": "babel-types",
+        "deps": [],
+        "version": "6.18.0"
+      },
+      {
+        "name": "babylon",
+        "deps": [],
+        "version": "6.13.1"
+      },
+      {
+        "name": "balanced-match",
+        "deps": [],
+        "version": "0.4.2"
+      },
+      {
+        "name": "bl",
+        "deps": [
+          {
+            "name": "readable-stream",
+            "deps": [],
+            "version": "2.0.6"
+          }
+        ],
+        "version": "1.1.2"
+      },
+      {
+        "name": "bluebird",
+        "deps": [],
+        "version": "3.4.6"
+      },
+      {
+        "name": "boom",
+        "deps": [],
+        "version": "2.10.1"
+      },
+      {
+        "name": "brace-expansion",
+        "deps": [],
+        "version": "1.1.6"
+      },
+      {
+        "name": "buffer-peek-stream",
+        "deps": [],
+        "version": "1.0.1"
+      },
+      {
+        "name": "buffer-shims",
+        "deps": [],
+        "version": "1.0.0"
+      },
+      {
+        "name": "camelcase",
+        "deps": [],
+        "version": "1.2.1"
+      },
+      {
+        "name": "caseless",
+        "deps": [],
+        "version": "0.11.0"
+      },
+      {
+        "name": "center-align",
+        "deps": [],
+        "version": "0.1.3"
+      },
+      {
+        "name": "chalk",
+        "deps": [],
+        "version": "1.1.3"
+      },
+      {
+        "name": "cliui",
+        "deps": [],
+        "version": "2.1.0"
+      },
+      {
+        "name": "combined-stream",
+        "deps": [],
+        "version": "1.0.5"
+      },
+      {
+        "name": "commander",
+        "deps": [],
+        "version": "2.9.0"
+      },
+      {
+        "name": "concat-map",
+        "deps": [],
+        "version": "0.0.1"
+      },
+      {
+        "name": "convert-source-map",
+        "deps": [],
+        "version": "1.3.0"
+      },
+      {
+        "name": "core-js",
+        "deps": [],
+        "version": "2.4.1"
+      },
+      {
+        "name": "core-util-is",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "cryptiles",
+        "deps": [],
+        "version": "2.0.5"
+      },
+      {
+        "name": "d",
+        "deps": [],
+        "version": "1.0.0"
+      },
+      {
+        "name": "dashdash",
+        "deps": [
+          {
+            "name": "assert-plus",
+            "deps": [],
+            "version": "1.0.0"
+          }
+        ],
+        "version": "1.14.0"
+      },
+      {
+        "name": "data-uri-to-buffer",
+        "deps": [],
+        "version": "0.0.4"
+      },
+      {
+        "name": "debug",
+        "deps": [],
+        "version": "2.3.2"
+      },
+      {
+        "name": "decamelize",
+        "deps": [],
+        "version": "1.2.0"
+      },
+      {
+        "name": "delayed-stream",
+        "deps": [],
+        "version": "1.0.0"
+      },
+      {
+        "name": "detect-indent",
+        "deps": [],
+        "version": "4.0.0"
+      },
+      {
+        "name": "end-of-stream",
+        "deps": [
+          {
+            "name": "once",
+            "deps": [],
+            "version": "1.3.3"
+          }
+        ],
+        "version": "1.1.0"
+      },
+      {
+        "name": "es5-ext",
+        "deps": [],
+        "version": "0.10.12"
+      },
+      {
+        "name": "es6-iterator",
+        "deps": [
+          {
+            "name": "d",
+            "deps": [],
+            "version": "0.1.1"
+          }
+        ],
+        "version": "2.0.0"
+      },
+      {
+        "name": "es6-symbol",
+        "deps": [
+          {
+            "name": "d",
+            "deps": [],
+            "version": "0.1.1"
+          }
+        ],
+        "version": "3.1.0"
+      },
+      {
+        "name": "es6-template-strings",
+        "deps": [],
+        "version": "2.0.1"
+      },
+      {
+        "name": "escape-string-regexp",
+        "deps": [],
+        "version": "1.0.5"
+      },
+      {
+        "name": "esniff",
+        "deps": [],
+        "version": "1.1.0"
+      },
+      {
+        "name": "esutils",
+        "deps": [],
+        "version": "2.0.2"
+      },
+      {
+        "name": "extend",
+        "deps": [],
+        "version": "3.0.0"
+      },
+      {
+        "name": "extsprintf",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "forever-agent",
+        "deps": [],
+        "version": "0.6.1"
+      },
+      {
+        "name": "form-data",
+        "deps": [],
+        "version": "2.1.2"
+      },
+      {
+        "name": "fs.realpath",
+        "deps": [],
+        "version": "1.0.0"
+      },
+      {
+        "name": "generate-function",
+        "deps": [],
+        "version": "2.0.0"
+      },
+      {
+        "name": "generate-object-property",
+        "deps": [],
+        "version": "1.2.0"
+      },
+      {
+        "name": "getpass",
+        "deps": [
+          {
+            "name": "assert-plus",
+            "deps": [],
+            "version": "1.0.0"
+          }
+        ],
+        "version": "0.1.6"
+      },
+      {
+        "name": "glob",
+        "deps": [],
+        "version": "7.1.1"
+      },
+      {
+        "name": "globals",
+        "deps": [],
+        "version": "9.13.0"
+      },
+      {
+        "name": "graceful-fs",
+        "deps": [],
+        "version": "4.1.10"
+      },
+      {
+        "name": "graceful-readlink",
+        "deps": [],
+        "version": "1.0.1"
+      },
+      {
+        "name": "har-validator",
+        "deps": [],
+        "version": "2.0.6"
+      },
+      {
+        "name": "has-ansi",
+        "deps": [],
+        "version": "2.0.0"
+      },
+      {
+        "name": "hawk",
+        "deps": [],
+        "version": "3.1.3"
+      },
+      {
+        "name": "hoek",
+        "deps": [],
+        "version": "2.16.3"
+      },
+      {
+        "name": "home-or-tmp",
+        "deps": [],
+        "version": "2.0.0"
+      },
+      {
+        "name": "http-signature",
+        "deps": [],
+        "version": "1.1.1"
+      },
+      {
+        "name": "inflight",
+        "deps": [],
+        "version": "1.0.6"
+      },
+      {
+        "name": "inherits",
+        "deps": [],
+        "version": "2.0.3"
+      },
+      {
+        "name": "invariant",
+        "deps": [],
+        "version": "2.2.2"
+      },
+      {
+        "name": "is-buffer",
+        "deps": [],
+        "version": "1.1.4"
+      },
+      {
+        "name": "is-finite",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "is-my-json-valid",
+        "deps": [],
+        "version": "2.15.0"
+      },
+      {
+        "name": "is-property",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "is-typedarray",
+        "deps": [],
+        "version": "1.0.0"
+      },
+      {
+        "name": "isarray",
+        "deps": [],
+        "version": "1.0.0"
+      },
+      {
+        "name": "isexe",
+        "deps": [],
+        "version": "1.1.2"
+      },
+      {
+        "name": "isstream",
+        "deps": [],
+        "version": "0.1.2"
+      },
+      {
+        "name": "js-tokens",
+        "deps": [],
+        "version": "2.0.0"
+      },
+      {
+        "name": "jsesc",
+        "deps": [],
+        "version": "1.3.0"
+      },
+      {
+        "name": "json-schema",
+        "deps": [],
+        "version": "0.2.3"
+      },
+      {
+        "name": "json-stringify-safe",
+        "deps": [],
+        "version": "5.0.1"
+      },
+      {
+        "name": "json5",
+        "deps": [],
+        "version": "0.5.0"
+      },
+      {
+        "name": "jsonpointer",
+        "deps": [],
+        "version": "4.0.0"
+      },
+      {
+        "name": "jspm-npm",
+        "deps": [],
+        "version": "0.30.1"
+      },
+      {
+        "name": "jsprim",
+        "deps": [],
+        "version": "1.3.1"
+      },
+      {
+        "name": "kind-of",
+        "deps": [],
+        "version": "3.0.4"
+      },
+      {
+        "name": "lazy-cache",
+        "deps": [],
+        "version": "1.0.4"
+      },
+      {
+        "name": "lodash",
+        "deps": [],
+        "version": "4.17.1"
+      },
+      {
+        "name": "longest",
+        "deps": [],
+        "version": "1.0.1"
+      },
+      {
+        "name": "loose-envify",
+        "deps": [],
+        "version": "1.3.0"
+      },
+      {
+        "name": "mime-db",
+        "deps": [],
+        "version": "1.24.0"
+      },
+      {
+        "name": "mime-types",
+        "deps": [],
+        "version": "2.1.12"
+      },
+      {
+        "name": "minimatch",
+        "deps": [],
+        "version": "3.0.3"
+      },
+      {
+        "name": "minimist",
+        "deps": [],
+        "version": "0.0.8"
+      },
+      {
+        "name": "mkdirp",
+        "deps": [],
+        "version": "0.5.1"
+      },
+      {
+        "name": "ms",
+        "deps": [],
+        "version": "0.7.2"
+      },
+      {
+        "name": "node-uuid",
+        "deps": [],
+        "version": "1.4.7"
+      },
+      {
+        "name": "number-is-nan",
+        "deps": [],
+        "version": "1.0.1"
+      },
+      {
+        "name": "oauth-sign",
+        "deps": [],
+        "version": "0.8.2"
+      },
+      {
+        "name": "once",
+        "deps": [],
+        "version": "1.4.0"
+      },
+      {
+        "name": "os-homedir",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "os-tmpdir",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "path-is-absolute",
+        "deps": [],
+        "version": "1.0.1"
+      },
+      {
+        "name": "pinkie",
+        "deps": [],
+        "version": "2.0.4"
+      },
+      {
+        "name": "pinkie-promise",
+        "deps": [],
+        "version": "2.0.1"
+      },
+      {
+        "name": "private",
+        "deps": [],
+        "version": "0.1.6"
+      },
+      {
+        "name": "process-nextick-args",
+        "deps": [],
+        "version": "1.0.7"
+      },
+      {
+        "name": "pump",
+        "deps": [],
+        "version": "1.0.1"
+      },
+      {
+        "name": "punycode",
+        "deps": [],
+        "version": "1.4.1"
+      },
+      {
+        "name": "qs",
+        "deps": [],
+        "version": "6.3.0"
+      },
+      {
+        "name": "readable-stream",
+        "deps": [],
+        "version": "2.2.2"
+      },
+      {
+        "name": "readdirp",
+        "deps": [],
+        "version": "2.1.0"
+      },
+      {
+        "name": "regenerator-runtime",
+        "deps": [],
+        "version": "0.9.6"
+      },
+      {
+        "name": "repeat-string",
+        "deps": [],
+        "version": "1.6.1"
+      },
+      {
+        "name": "repeating",
+        "deps": [],
+        "version": "2.0.1"
+      },
+      {
+        "name": "request",
+        "deps": [],
+        "version": "2.78.0"
+      },
+      {
+        "name": "right-align",
+        "deps": [],
+        "version": "0.1.3"
+      },
+      {
+        "name": "rollup",
+        "deps": [
+          {
+            "name": "source-map-support",
+            "deps": [],
+            "version": "0.4.6"
+          }
+        ],
+        "version": "0.36.3"
+      },
+      {
+        "name": "rsvp",
+        "deps": [],
+        "version": "3.3.3"
+      },
+      {
+        "name": "semver",
+        "deps": [],
+        "version": "5.3.0"
+      },
+      {
+        "name": "set-immediate-shim",
+        "deps": [],
+        "version": "1.0.1"
+      },
+      {
+        "name": "slash",
+        "deps": [],
+        "version": "1.0.0"
+      },
+      {
+        "name": "sntp",
+        "deps": [],
+        "version": "1.0.9"
+      },
+      {
+        "name": "source-map",
+        "deps": [],
+        "version": "0.5.6"
+      },
+      {
+        "name": "source-map-support",
+        "deps": [
+          {
+            "name": "source-map",
+            "deps": [],
+            "version": "0.1.32"
+          }
+        ],
+        "version": "0.2.10"
+      },
+      {
+        "name": "sshpk",
+        "deps": [
+          {
+            "name": "assert-plus",
+            "deps": [],
+            "version": "1.0.0"
+          }
+        ],
+        "version": "1.10.1"
+      },
+      {
+        "name": "string_decoder",
+        "deps": [],
+        "version": "0.10.31"
+      },
+      {
+        "name": "stringstream",
+        "deps": [],
+        "version": "0.0.5"
+      },
+      {
+        "name": "strip-ansi",
+        "deps": [],
+        "version": "3.0.1"
+      },
+      {
+        "name": "supports-color",
+        "deps": [],
+        "version": "2.0.0"
+      },
+      {
+        "name": "systemjs",
+        "deps": [],
+        "version": "0.19.41"
+      },
+      {
+        "name": "systemjs-builder",
+        "deps": [],
+        "version": "0.15.34"
+      },
+      {
+        "name": "tar-fs",
+        "deps": [],
+        "version": "1.14.0"
+      },
+      {
+        "name": "tar-stream",
+        "deps": [],
+        "version": "1.5.2"
+      },
+      {
+        "name": "to-fast-properties",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "tough-cookie",
+        "deps": [],
+        "version": "2.3.2"
+      },
+      {
+        "name": "traceur",
+        "deps": [],
+        "version": "0.0.105"
+      },
+      {
+        "name": "tunnel-agent",
+        "deps": [],
+        "version": "0.4.3"
+      },
+      {
+        "name": "tweetnacl",
+        "deps": [],
+        "version": "0.14.3"
+      },
+      {
+        "name": "uglify-js",
+        "deps": [],
+        "version": "2.7.4"
+      },
+      {
+        "name": "uglify-to-browserify",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "util-deprecate",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "verror",
+        "deps": [],
+        "version": "1.3.6"
+      },
+      {
+        "name": "when",
+        "deps": [],
+        "version": "3.7.7"
+      },
+      {
+        "name": "which",
+        "deps": [],
+        "version": "1.2.12"
+      },
+      {
+        "name": "window-size",
+        "deps": [],
+        "version": "0.1.0"
+      },
+      {
+        "name": "wordwrap",
+        "deps": [],
+        "version": "0.0.2"
+      },
+      {
+        "name": "wrappy",
+        "deps": [],
+        "version": "1.0.2"
+      },
+      {
+        "name": "xtend",
+        "deps": [],
+        "version": "4.0.1"
+      },
+      {
+        "name": "yargs",
+        "deps": [],
+        "version": "3.10.0"
+      }
+    ],
+    "version": "0.0.1"
+  },
+  "registry": {
+    "align-text@0.1.4": {
+      "name": "align-text",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "align-text@0.1.4",
+      "location": "node_modules/align-text"
+    },
+    "amdefine@1.0.1": {
+      "name": "amdefine",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "amdefine@1.0.1",
+      "location": "node_modules/amdefine"
+    },
+    "ansi-regex@2.0.0": {
+      "name": "ansi-regex",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "ansi-regex@2.0.0",
+      "location": "node_modules/ansi-regex"
+    },
+    "ansi-styles@2.2.1": {
+      "name": "ansi-styles",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "ansi-styles@2.2.1",
+      "location": "node_modules/ansi-styles"
+    },
+    "asn1@0.2.3": {
+      "name": "asn1",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "lib/ber/reader.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/ber/writer.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "tst/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./lib/ber": "./lib/ber/index.js"
+        }
+      },
+      "key": "asn1@0.2.3",
+      "location": "node_modules/asn1"
+    },
+    "assert-plus@0.2.0": {
+      "name": "assert-plus",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "assert.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "assert-plus@0.2.0",
+      "location": "node_modules/assert-plus"
+    },
+    "async@0.2.10": {
+      "name": "async",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "async@0.2.10",
+      "location": "node_modules/async"
+    },
+    "asynckit@0.4.0": {
+      "name": "asynckit",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "asynckit@0.4.0",
+      "location": "node_modules/asynckit"
+    },
+    "aws-sign2@0.6.0": {
+      "name": "aws-sign2",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "aws-sign2@0.6.0",
+      "location": "node_modules/aws-sign2"
+    },
+    "aws4@1.5.0": {
+      "name": "aws4",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "aws4.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "aws4@1.5.0",
+      "location": "node_modules/aws4"
+    },
+    "babel-code-frame@6.16.0": {
+      "name": "babel-code-frame",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-code-frame@6.16.0",
+      "location": "node_modules/babel-code-frame"
+    },
+    "babel-core@6.18.2": {
+      "name": "babel-core",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib/transformation/file": "./lib/transformation/file/index.js",
+          "./lib/transformation/file/options": "./lib/transformation/file/options/index.js",
+          "./package": "./package.json"
+        }
+      },
+      "key": "babel-core@6.18.2",
+      "location": "node_modules/babel-core"
+    },
+    "babel-generator@6.18.0": {
+      "name": "babel-generator",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "lib/buffer.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./lib/node": "./lib/node/index.js"
+        }
+      },
+      "key": "babel-generator@6.18.0",
+      "location": "node_modules/babel-generator"
+    },
+    "babel-helper-hoist-variables@6.18.0": {
+      "name": "babel-helper-hoist-variables",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-helper-hoist-variables@6.18.0",
+      "location": "node_modules/babel-helper-hoist-variables"
+    },
+    "babel-helpers@6.16.0": {
+      "name": "babel-helpers",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-helpers@6.16.0",
+      "location": "node_modules/babel-helpers"
+    },
+    "babel-messages@6.8.0": {
+      "name": "babel-messages",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-messages@6.8.0",
+      "location": "node_modules/babel-messages"
+    },
+    "babel-plugin-transform-cjs-system-require@0.1.1": {
+      "name": "babel-plugin-transform-cjs-system-require",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "test/index.js": {
+            "format": "esm"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-plugin-transform-cjs-system-require@0.1.1",
+      "location": "node_modules/babel-plugin-transform-cjs-system-require"
+    },
+    "babel-plugin-transform-cjs-system-wrapper@0.2.1": {
+      "name": "babel-plugin-transform-cjs-system-wrapper",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "test/fixtures/set-deps/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-dynamic-filepaths/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-globals/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-module-name/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-static-filepaths/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/transfer-directives/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/use-filepath/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/use-optimize/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/wrap-the-readme-example/expected.js": {
+            "format": "register"
+          },
+          "test/index.js": {
+            "format": "esm"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-plugin-transform-cjs-system-wrapper@0.2.1",
+      "location": "node_modules/babel-plugin-transform-cjs-system-wrapper"
+    },
+    "babel-plugin-transform-es2015-modules-systemjs@6.18.0": {
+      "name": "babel-plugin-transform-es2015-modules-systemjs",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-plugin-transform-es2015-modules-systemjs@6.18.0",
+      "location": "node_modules/babel-plugin-transform-es2015-modules-systemjs"
+    },
+    "babel-plugin-transform-global-system-wrapper@0.0.1": {
+      "name": "babel-plugin-transform-global-system-wrapper",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "test/fixtures/export-functions/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/export-variables/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-dependencies/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-export-name/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-globals/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-module-name/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/wrap-function/expected.js": {
+            "format": "register"
+          },
+          "test/index.js": {
+            "format": "esm"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-plugin-transform-global-system-wrapper@0.0.1",
+      "location": "node_modules/babel-plugin-transform-global-system-wrapper"
+    },
+    "babel-plugin-transform-system-register@0.0.1": {
+      "name": "babel-plugin-transform-system-register",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "test/fixtures/add-modulename-argument/actual.js": {
+            "format": "register"
+          },
+          "test/fixtures/add-modulename-argument/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/normalize-dependencies/actual.js": {
+            "format": "register"
+          },
+          "test/fixtures/normalize-dependencies/expected.js": {
+            "format": "register"
+          },
+          "test/fixtures/reject-bundle/actual.js": {
+            "format": "register"
+          },
+          "test/fixtures/reject-multiple-anon/actual.js": {
+            "format": "register"
+          },
+          "test/fixtures/rename-system-global/actual.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-module-name/actual.js": {
+            "format": "register"
+          },
+          "test/fixtures/set-module-name/expected.js": {
+            "format": "register"
+          },
+          "test/index.js": {
+            "format": "esm"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-plugin-transform-system-register@0.0.1",
+      "location": "node_modules/babel-plugin-transform-system-register"
+    },
+    "babel-register@6.18.0": {
+      "name": "babel-register",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib/node.js": {
+            "browser": "./lib/browser.js"
+          }
+        }
+      },
+      "key": "babel-register@6.18.0",
+      "location": "node_modules/babel-register"
+    },
+    "babel-runtime@6.18.0": {
+      "name": "babel-runtime",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./regenerator": "./regenerator/index.js"
+        }
+      },
+      "key": "babel-runtime@6.18.0",
+      "location": "node_modules/babel-runtime"
+    },
+    "babel-template@6.16.0": {
+      "name": "babel-template",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babel-template@6.16.0",
+      "location": "node_modules/babel-template"
+    },
+    "babel-traverse@6.18.0": {
+      "name": "babel-traverse",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./lib/path": "./lib/path/index.js",
+          "./lib/path/inference": "./lib/path/inference/index.js",
+          "./lib/scope": "./lib/scope/index.js"
+        }
+      },
+      "key": "babel-traverse@6.18.0",
+      "location": "node_modules/babel-traverse"
+    },
+    "babel-types@6.18.0": {
+      "name": "babel-types",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./lib/definitions": "./lib/definitions/index.js"
+        }
+      },
+      "key": "babel-types@6.18.0",
+      "location": "node_modules/babel-types"
+    },
+    "babylon@6.13.1": {
+      "name": "babylon",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "babylon@6.13.1",
+      "location": "node_modules/babylon"
+    },
+    "balanced-match@0.4.2": {
+      "name": "balanced-match",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "balanced-match@0.4.2",
+      "location": "node_modules/balanced-match"
+    },
+    "bl@1.1.2": {
+      "name": "bl",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "bl.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "test/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "bl@1.1.2",
+      "location": "node_modules/bl"
+    },
+    "bluebird@3.4.6": {
+      "name": "bluebird",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./js/release/bluebird.js": {
+            "browser": "./js/browser/bluebird.js"
+          }
+        }
+      },
+      "key": "bluebird@3.4.6",
+      "location": "node_modules/bluebird"
+    },
+    "boom@2.10.1": {
+      "name": "boom",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "boom@2.10.1",
+      "location": "node_modules/boom"
+    },
+    "brace-expansion@1.1.6": {
+      "name": "brace-expansion",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "brace-expansion@1.1.6",
+      "location": "node_modules/brace-expansion"
+    },
+    "buffer-peek-stream@1.0.1": {
+      "name": "buffer-peek-stream",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "buffer-peek-stream.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "test.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "buffer-peek-stream@1.0.1",
+      "location": "node_modules/buffer-peek-stream"
+    },
+    "buffer-shims@1.0.0": {
+      "name": "buffer-shims",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "index.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "buffer-shims@1.0.0",
+      "location": "node_modules/buffer-shims"
+    },
+    "camelcase@1.2.1": {
+      "name": "camelcase",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "camelcase@1.2.1",
+      "location": "node_modules/camelcase"
+    },
+    "caseless@0.11.0": {
+      "name": "caseless",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "caseless@0.11.0",
+      "location": "node_modules/caseless"
+    },
+    "center-align@0.1.3": {
+      "name": "center-align",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "center-align@0.1.3",
+      "location": "node_modules/center-align"
+    },
+    "chalk@1.1.3": {
+      "name": "chalk",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "chalk@1.1.3",
+      "location": "node_modules/chalk"
+    },
+    "cliui@2.1.0": {
+      "name": "cliui",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "cliui@2.1.0",
+      "location": "node_modules/cliui"
+    },
+    "combined-stream@1.0.5": {
+      "name": "combined-stream",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "lib/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "combined-stream@1.0.5",
+      "location": "node_modules/combined-stream"
+    },
+    "commander@2.9.0": {
+      "name": "commander",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "commander@2.9.0",
+      "location": "node_modules/commander"
+    },
+    "concat-map@0.0.1": {
+      "name": "concat-map",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "concat-map@0.0.1",
+      "location": "node_modules/concat-map"
+    },
+    "convert-source-map@1.3.0": {
+      "name": "convert-source-map",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "index.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "convert-source-map@1.3.0",
+      "location": "node_modules/convert-source-map"
+    },
+    "core-js@2.4.1": {
+      "name": "core-js",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./build": "./build/index.js",
+          "./core": "./core/index.js",
+          "./es5": "./es5/index.js",
+          "./es6": "./es6/index.js",
+          "./es7": "./es7/index.js",
+          "./fn/array": "./fn/array/index.js",
+          "./fn/array/virtual": "./fn/array/virtual/index.js",
+          "./fn/date": "./fn/date/index.js",
+          "./fn/dom-collections": "./fn/dom-collections/index.js",
+          "./fn/error": "./fn/error/index.js",
+          "./fn/function": "./fn/function/index.js",
+          "./fn/function/virtual": "./fn/function/virtual/index.js",
+          "./fn/json": "./fn/json/index.js",
+          "./fn/math": "./fn/math/index.js",
+          "./fn/number": "./fn/number/index.js",
+          "./fn/number/virtual": "./fn/number/virtual/index.js",
+          "./fn/object": "./fn/object/index.js",
+          "./fn/reflect": "./fn/reflect/index.js",
+          "./fn/regexp": "./fn/regexp/index.js",
+          "./fn/string": "./fn/string/index.js",
+          "./fn/string/virtual": "./fn/string/virtual/index.js",
+          "./fn/symbol": "./fn/symbol/index.js",
+          "./fn/system": "./fn/system/index.js",
+          "./fn/typed": "./fn/typed/index.js",
+          "./library": "./library/index.js",
+          "./library/core": "./library/core/index.js",
+          "./library/es5": "./library/es5/index.js",
+          "./library/es6": "./library/es6/index.js",
+          "./library/es7": "./library/es7/index.js",
+          "./library/fn/array": "./library/fn/array/index.js",
+          "./library/fn/array/virtual": "./library/fn/array/virtual/index.js",
+          "./library/fn/date": "./library/fn/date/index.js",
+          "./library/fn/dom-collections": "./library/fn/dom-collections/index.js",
+          "./library/fn/error": "./library/fn/error/index.js",
+          "./library/fn/function": "./library/fn/function/index.js",
+          "./library/fn/function/virtual": "./library/fn/function/virtual/index.js",
+          "./library/fn/json": "./library/fn/json/index.js",
+          "./library/fn/math": "./library/fn/math/index.js",
+          "./library/fn/number": "./library/fn/number/index.js",
+          "./library/fn/number/virtual": "./library/fn/number/virtual/index.js",
+          "./library/fn/object": "./library/fn/object/index.js",
+          "./library/fn/reflect": "./library/fn/reflect/index.js",
+          "./library/fn/regexp": "./library/fn/regexp/index.js",
+          "./library/fn/string": "./library/fn/string/index.js",
+          "./library/fn/string/virtual": "./library/fn/string/virtual/index.js",
+          "./library/fn/symbol": "./library/fn/symbol/index.js",
+          "./library/fn/system": "./library/fn/system/index.js",
+          "./library/fn/typed": "./library/fn/typed/index.js",
+          "./library/stage": "./library/stage/index.js",
+          "./library/web": "./library/web/index.js",
+          "./package": "./package.json",
+          "./stage": "./stage/index.js",
+          "./web": "./web/index.js"
+        }
+      },
+      "key": "core-js@2.4.1",
+      "location": "node_modules/core-js"
+    },
+    "core-util-is@1.0.2": {
+      "name": "core-util-is",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "lib/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "test.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "core-util-is@1.0.2",
+      "location": "node_modules/core-util-is"
+    },
+    "cryptiles@2.0.5": {
+      "name": "cryptiles",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "cryptiles@2.0.5",
+      "location": "node_modules/cryptiles"
+    },
+    "d@1.0.0": {
+      "name": "d",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "d@1.0.0",
+      "location": "node_modules/d"
+    },
+    "dashdash@1.14.0": {
+      "name": "dashdash",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "dashdash@1.14.0",
+      "location": "node_modules/dashdash"
+    },
+    "data-uri-to-buffer@0.0.4": {
+      "name": "data-uri-to-buffer",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "index.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "data-uri-to-buffer@0.0.4",
+      "location": "node_modules/data-uri-to-buffer"
+    },
+    "debug@2.3.2": {
+      "name": "debug",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./index.js": {
+            "browser": "./browser.js"
+          }
+        }
+      },
+      "key": "debug@2.3.2",
+      "location": "node_modules/debug"
+    },
+    "decamelize@1.2.0": {
+      "name": "decamelize",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "decamelize@1.2.0",
+      "location": "node_modules/decamelize"
+    },
+    "delayed-stream@1.0.0": {
+      "name": "delayed-stream",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "delayed-stream@1.0.0",
+      "location": "node_modules/delayed-stream"
+    },
+    "detect-indent@4.0.0": {
+      "name": "detect-indent",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "detect-indent@4.0.0",
+      "location": "node_modules/detect-indent"
+    },
+    "end-of-stream@1.1.0": {
+      "name": "end-of-stream",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "end-of-stream@1.1.0",
+      "location": "node_modules/end-of-stream"
+    },
+    "es5-ext@0.10.12": {
+      "name": "es5-ext",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./array": "./array/index.js",
+          "./array/#": "./array/#/index.js",
+          "./array/#/@@iterator": "./array/#/@@iterator/index.js",
+          "./array/#/concat": "./array/#/concat/index.js",
+          "./array/#/copy-within": "./array/#/copy-within/index.js",
+          "./array/#/entries": "./array/#/entries/index.js",
+          "./array/#/fill": "./array/#/fill/index.js",
+          "./array/#/filter": "./array/#/filter/index.js",
+          "./array/#/find": "./array/#/find/index.js",
+          "./array/#/find-index": "./array/#/find-index/index.js",
+          "./array/#/keys": "./array/#/keys/index.js",
+          "./array/#/map": "./array/#/map/index.js",
+          "./array/#/slice": "./array/#/slice/index.js",
+          "./array/#/splice": "./array/#/splice/index.js",
+          "./array/#/values": "./array/#/values/index.js",
+          "./array/from": "./array/from/index.js",
+          "./array/of": "./array/of/index.js",
+          "./boolean": "./boolean/index.js",
+          "./date": "./date/index.js",
+          "./date/#": "./date/#/index.js",
+          "./error": "./error/index.js",
+          "./error/#": "./error/#/index.js",
+          "./function": "./function/index.js",
+          "./function/#": "./function/#/index.js",
+          "./iterable": "./iterable/index.js",
+          "./math": "./math/index.js",
+          "./math/acosh": "./math/acosh/index.js",
+          "./math/asinh": "./math/asinh/index.js",
+          "./math/atanh": "./math/atanh/index.js",
+          "./math/cbrt": "./math/cbrt/index.js",
+          "./math/clz32": "./math/clz32/index.js",
+          "./math/cosh": "./math/cosh/index.js",
+          "./math/expm1": "./math/expm1/index.js",
+          "./math/fround": "./math/fround/index.js",
+          "./math/hypot": "./math/hypot/index.js",
+          "./math/imul": "./math/imul/index.js",
+          "./math/log10": "./math/log10/index.js",
+          "./math/log1p": "./math/log1p/index.js",
+          "./math/log2": "./math/log2/index.js",
+          "./math/sign": "./math/sign/index.js",
+          "./math/sinh": "./math/sinh/index.js",
+          "./math/tanh": "./math/tanh/index.js",
+          "./math/trunc": "./math/trunc/index.js",
+          "./number": "./number/index.js",
+          "./number/#": "./number/#/index.js",
+          "./number/epsilon": "./number/epsilon/index.js",
+          "./number/is-finite": "./number/is-finite/index.js",
+          "./number/is-integer": "./number/is-integer/index.js",
+          "./number/is-nan": "./number/is-nan/index.js",
+          "./number/is-safe-integer": "./number/is-safe-integer/index.js",
+          "./number/max-safe-integer": "./number/max-safe-integer/index.js",
+          "./number/min-safe-integer": "./number/min-safe-integer/index.js",
+          "./object": "./object/index.js",
+          "./object/assign": "./object/assign/index.js",
+          "./object/keys": "./object/keys/index.js",
+          "./object/set-prototype-of": "./object/set-prototype-of/index.js",
+          "./reg-exp": "./reg-exp/index.js",
+          "./reg-exp/#": "./reg-exp/#/index.js",
+          "./reg-exp/#/match": "./reg-exp/#/match/index.js",
+          "./reg-exp/#/replace": "./reg-exp/#/replace/index.js",
+          "./reg-exp/#/search": "./reg-exp/#/search/index.js",
+          "./reg-exp/#/split": "./reg-exp/#/split/index.js",
+          "./string": "./string/index.js",
+          "./string/#": "./string/#/index.js",
+          "./string/#/@@iterator": "./string/#/@@iterator/index.js",
+          "./string/#/code-point-at": "./string/#/code-point-at/index.js",
+          "./string/#/contains": "./string/#/contains/index.js",
+          "./string/#/ends-with": "./string/#/ends-with/index.js",
+          "./string/#/normalize": "./string/#/normalize/index.js",
+          "./string/#/repeat": "./string/#/repeat/index.js",
+          "./string/#/starts-with": "./string/#/starts-with/index.js",
+          "./string/from-code-point": "./string/from-code-point/index.js",
+          "./string/raw": "./string/raw/index.js",
+          "./test/array/#/@@iterator": "./test/array/#/@@iterator/index.js",
+          "./test/array/#/concat": "./test/array/#/concat/index.js",
+          "./test/array/#/copy-within": "./test/array/#/copy-within/index.js",
+          "./test/array/#/entries": "./test/array/#/entries/index.js",
+          "./test/array/#/fill": "./test/array/#/fill/index.js",
+          "./test/array/#/filter": "./test/array/#/filter/index.js",
+          "./test/array/#/find": "./test/array/#/find/index.js",
+          "./test/array/#/find-index": "./test/array/#/find-index/index.js",
+          "./test/array/#/keys": "./test/array/#/keys/index.js",
+          "./test/array/#/map": "./test/array/#/map/index.js",
+          "./test/array/#/slice": "./test/array/#/slice/index.js",
+          "./test/array/#/splice": "./test/array/#/splice/index.js",
+          "./test/array/#/values": "./test/array/#/values/index.js",
+          "./test/array/from": "./test/array/from/index.js",
+          "./test/array/of": "./test/array/of/index.js",
+          "./test/math/acosh": "./test/math/acosh/index.js",
+          "./test/math/asinh": "./test/math/asinh/index.js",
+          "./test/math/atanh": "./test/math/atanh/index.js",
+          "./test/math/cbrt": "./test/math/cbrt/index.js",
+          "./test/math/clz32": "./test/math/clz32/index.js",
+          "./test/math/cosh": "./test/math/cosh/index.js",
+          "./test/math/expm1": "./test/math/expm1/index.js",
+          "./test/math/fround": "./test/math/fround/index.js",
+          "./test/math/hypot": "./test/math/hypot/index.js",
+          "./test/math/imul": "./test/math/imul/index.js",
+          "./test/math/log10": "./test/math/log10/index.js",
+          "./test/math/log1p": "./test/math/log1p/index.js",
+          "./test/math/log2": "./test/math/log2/index.js",
+          "./test/math/sign": "./test/math/sign/index.js",
+          "./test/math/sinh": "./test/math/sinh/index.js",
+          "./test/math/tanh": "./test/math/tanh/index.js",
+          "./test/math/trunc": "./test/math/trunc/index.js",
+          "./test/number/epsilon": "./test/number/epsilon/index.js",
+          "./test/number/is-finite": "./test/number/is-finite/index.js",
+          "./test/number/is-integer": "./test/number/is-integer/index.js",
+          "./test/number/is-nan": "./test/number/is-nan/index.js",
+          "./test/number/is-safe-integer": "./test/number/is-safe-integer/index.js",
+          "./test/number/max-safe-integer": "./test/number/max-safe-integer/index.js",
+          "./test/number/min-safe-integer": "./test/number/min-safe-integer/index.js",
+          "./test/object/assign": "./test/object/assign/index.js",
+          "./test/object/keys": "./test/object/keys/index.js",
+          "./test/object/set-prototype-of": "./test/object/set-prototype-of/index.js",
+          "./test/reg-exp/#": "./test/reg-exp/#/index.js",
+          "./test/reg-exp/#/match": "./test/reg-exp/#/match/index.js",
+          "./test/reg-exp/#/replace": "./test/reg-exp/#/replace/index.js",
+          "./test/reg-exp/#/search": "./test/reg-exp/#/search/index.js",
+          "./test/reg-exp/#/split": "./test/reg-exp/#/split/index.js",
+          "./test/string/#/@@iterator": "./test/string/#/@@iterator/index.js",
+          "./test/string/#/code-point-at": "./test/string/#/code-point-at/index.js",
+          "./test/string/#/contains": "./test/string/#/contains/index.js",
+          "./test/string/#/ends-with": "./test/string/#/ends-with/index.js",
+          "./test/string/#/normalize": "./test/string/#/normalize/index.js",
+          "./test/string/#/repeat": "./test/string/#/repeat/index.js",
+          "./test/string/#/starts-with": "./test/string/#/starts-with/index.js",
+          "./test/string/from-code-point": "./test/string/from-code-point/index.js",
+          "./test/string/raw": "./test/string/raw/index.js"
+        }
+      },
+      "key": "es5-ext@0.10.12",
+      "location": "node_modules/es5-ext"
+    },
+    "es6-iterator@2.0.0": {
+      "name": "es6-iterator",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "es6-iterator@2.0.0",
+      "location": "node_modules/es6-iterator"
+    },
+    "es6-symbol@3.1.0": {
+      "name": "es6-symbol",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "es6-symbol@3.1.0",
+      "location": "node_modules/es6-symbol"
+    },
+    "es6-template-strings@2.0.1": {
+      "name": "es6-template-strings",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "es6-template-strings@2.0.1",
+      "location": "node_modules/es6-template-strings"
+    },
+    "escape-string-regexp@1.0.5": {
+      "name": "escape-string-regexp",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "escape-string-regexp@1.0.5",
+      "location": "node_modules/escape-string-regexp"
+    },
+    "esniff@1.1.0": {
+      "name": "esniff",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./test": "./test/index.js",
+          "./test/__playground": "./test/__playground/index.js"
+        }
+      },
+      "key": "esniff@1.1.0",
+      "location": "node_modules/esniff"
+    },
+    "esutils@2.0.2": {
+      "name": "esutils",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "esutils@2.0.2",
+      "location": "node_modules/esutils"
+    },
+    "extend@3.0.0": {
+      "name": "extend",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "extend@3.0.0",
+      "location": "node_modules/extend"
+    },
+    "extsprintf@1.0.2": {
+      "name": "extsprintf",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "extsprintf": "."
+        }
+      },
+      "key": "extsprintf@1.0.2",
+      "location": "node_modules/extsprintf"
+    },
+    "forever-agent@0.6.1": {
+      "name": "forever-agent",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "forever-agent@0.6.1",
+      "location": "node_modules/forever-agent"
+    },
+    "form-data@2.1.2": {
+      "name": "form-data",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "lib/form_data.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "./lib/form_data.js": {
+            "browser": "./lib/browser.js"
+          }
+        }
+      },
+      "key": "form-data@2.1.2",
+      "location": "node_modules/form-data"
+    },
+    "fs.realpath@1.0.0": {
+      "name": "fs.realpath",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "fs.realpath@1.0.0",
+      "location": "node_modules/fs.realpath"
+    },
+    "generate-function@2.0.0": {
+      "name": "generate-function",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "generate-function@2.0.0",
+      "location": "node_modules/generate-function"
+    },
+    "generate-object-property@1.2.0": {
+      "name": "generate-object-property",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "generate-object-property@1.2.0",
+      "location": "node_modules/generate-object-property"
+    },
+    "getpass@0.1.6": {
+      "name": "getpass",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "getpass@0.1.6",
+      "location": "node_modules/getpass"
+    },
+    "glob@7.1.1": {
+      "name": "glob",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "glob@7.1.1",
+      "location": "node_modules/glob"
+    },
+    "globals@9.13.0": {
+      "name": "globals",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "globals@9.13.0",
+      "location": "node_modules/globals"
+    },
+    "graceful-fs@4.1.10": {
+      "name": "graceful-fs",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "graceful-fs@4.1.10",
+      "location": "node_modules/graceful-fs"
+    },
+    "graceful-readlink@1.0.1": {
+      "name": "graceful-readlink",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "graceful-readlink@1.0.1",
+      "location": "node_modules/graceful-readlink"
+    },
+    "har-validator@2.0.6": {
+      "name": "har-validator",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./lib/schemas": "./lib/schemas/index.js"
+        }
+      },
+      "key": "har-validator@2.0.6",
+      "location": "node_modules/har-validator"
+    },
+    "has-ansi@2.0.0": {
+      "name": "has-ansi",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "has-ansi@2.0.0",
+      "location": "node_modules/has-ansi"
+    },
+    "hawk@3.1.3": {
+      "name": "hawk",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./lib/index.js": {
+            "browser": "./lib/browser.js"
+          },
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "hawk@3.1.3",
+      "location": "node_modules/hawk"
+    },
+    "hoek@2.16.3": {
+      "name": "hoek",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "lib/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "test/index.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "hoek@2.16.3",
+      "location": "node_modules/hoek"
+    },
+    "home-or-tmp@2.0.0": {
+      "name": "home-or-tmp",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "home-or-tmp@2.0.0",
+      "location": "node_modules/home-or-tmp"
+    },
+    "http-signature@1.1.1": {
+      "name": "http-signature",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "lib/signer.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/verify.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "http-signature@1.1.1",
+      "location": "node_modules/http-signature"
+    },
+    "inflight@1.0.6": {
+      "name": "inflight",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "inflight@1.0.6",
+      "location": "node_modules/inflight"
+    },
+    "inherits@2.0.3": {
+      "name": "inherits",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./inherits.js": {
+            "browser": "./inherits_browser.js"
+          }
+        }
+      },
+      "key": "inherits@2.0.3",
+      "location": "node_modules/inherits"
+    },
+    "invariant@2.2.2": {
+      "name": "invariant",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./invariant.js": {
+            "browser": "./browser.js"
+          }
+        }
+      },
+      "key": "invariant@2.2.2",
+      "location": "node_modules/invariant"
+    },
+    "is-buffer@1.1.4": {
+      "name": "is-buffer",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "test/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "is-buffer@1.1.4",
+      "location": "node_modules/is-buffer"
+    },
+    "is-finite@1.0.2": {
+      "name": "is-finite",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "is-finite@1.0.2",
+      "location": "node_modules/is-finite"
+    },
+    "is-my-json-valid@2.15.0": {
+      "name": "is-my-json-valid",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "is-my-json-valid@2.15.0",
+      "location": "node_modules/is-my-json-valid"
+    },
+    "is-property@1.0.2": {
+      "name": "is-property",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "is-property@1.0.2",
+      "location": "node_modules/is-property"
+    },
+    "is-typedarray@1.0.0": {
+      "name": "is-typedarray",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "is-typedarray@1.0.0",
+      "location": "node_modules/is-typedarray"
+    },
+    "isarray@1.0.0": {
+      "name": "isarray",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "isarray@1.0.0",
+      "location": "node_modules/isarray"
+    },
+    "isexe@1.1.2": {
+      "name": "isexe",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "isexe@1.1.2",
+      "location": "node_modules/isexe"
+    },
+    "isstream@0.1.2": {
+      "name": "isstream",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "isstream@0.1.2",
+      "location": "node_modules/isstream"
+    },
+    "js-tokens@2.0.0": {
+      "name": "js-tokens",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "js-tokens@2.0.0",
+      "location": "node_modules/js-tokens"
+    },
+    "jsesc@1.3.0": {
+      "name": "jsesc",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "jsesc@1.3.0",
+      "location": "node_modules/jsesc"
+    },
+    "json-schema@0.2.3": {
+      "name": "json-schema",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "json-schema@0.2.3",
+      "location": "node_modules/json-schema"
+    },
+    "json-stringify-safe@5.0.1": {
+      "name": "json-stringify-safe",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "json-stringify-safe@5.0.1",
+      "location": "node_modules/json-stringify-safe"
+    },
+    "json5@0.5.0": {
+      "name": "json5",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "json5@0.5.0",
+      "location": "node_modules/json5"
+    },
+    "jsonpointer@4.0.0": {
+      "name": "jsonpointer",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "jsonpointer@4.0.0",
+      "location": "node_modules/jsonpointer"
+    },
+    "jspm-npm@0.30.1": {
+      "name": "jspm-npm",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "lib/auth.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/node-transformer.js": {
+            "cjsRequireDetection": false
+          },
+          "lib/npmrc.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "jspm-npm@0.30.1",
+      "location": "node_modules/jspm-npm"
+    },
+    "jsprim@1.3.1": {
+      "name": "jsprim",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "jsprim@1.3.1",
+      "location": "node_modules/jsprim"
+    },
+    "kind-of@3.0.4": {
+      "name": "kind-of",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "index.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "kind-of@3.0.4",
+      "location": "node_modules/kind-of"
+    },
+    "lazy-cache@1.0.4": {
+      "name": "lazy-cache",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "lazy-cache@1.0.4",
+      "location": "node_modules/lazy-cache"
+    },
+    "lodash@4.17.1": {
+      "name": "lodash",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "_cloneBuffer.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "isBuffer.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "lodash@4.17.1",
+      "location": "node_modules/lodash"
+    },
+    "longest@1.0.1": {
+      "name": "longest",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "longest@1.0.1",
+      "location": "node_modules/longest"
+    },
+    "loose-envify@1.3.0": {
+      "name": "loose-envify",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "loose-envify@1.3.0",
+      "location": "node_modules/loose-envify"
+    },
+    "mime-db@1.24.0": {
+      "name": "mime-db",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "mime-db@1.24.0",
+      "location": "node_modules/mime-db"
+    },
+    "mime-types@2.1.12": {
+      "name": "mime-types",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "mime-types@2.1.12",
+      "location": "node_modules/mime-types"
+    },
+    "minimatch@3.0.3": {
+      "name": "minimatch",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "minimatch@3.0.3",
+      "location": "node_modules/minimatch"
+    },
+    "minimist@0.0.8": {
+      "name": "minimist",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "minimist@0.0.8",
+      "location": "node_modules/minimist"
+    },
+    "mkdirp@0.5.1": {
+      "name": "mkdirp",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "mkdirp": "."
+        }
+      },
+      "key": "mkdirp@0.5.1",
+      "location": "node_modules/mkdirp"
+    },
+    "ms@0.7.2": {
+      "name": "ms",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "ms@0.7.2",
+      "location": "node_modules/ms"
+    },
+    "node-uuid@1.4.7": {
+      "name": "node-uuid",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "uuid.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "node-uuid@1.4.7",
+      "location": "node_modules/node-uuid"
+    },
+    "number-is-nan@1.0.1": {
+      "name": "number-is-nan",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "number-is-nan@1.0.1",
+      "location": "node_modules/number-is-nan"
+    },
+    "oauth-sign@0.8.2": {
+      "name": "oauth-sign",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "oauth-sign@0.8.2",
+      "location": "node_modules/oauth-sign"
+    },
+    "once@1.4.0": {
+      "name": "once",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "once@1.4.0",
+      "location": "node_modules/once"
+    },
+    "os-homedir@1.0.2": {
+      "name": "os-homedir",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "os-homedir@1.0.2",
+      "location": "node_modules/os-homedir"
+    },
+    "os-tmpdir@1.0.2": {
+      "name": "os-tmpdir",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "os-tmpdir@1.0.2",
+      "location": "node_modules/os-tmpdir"
+    },
+    "path-is-absolute@1.0.1": {
+      "name": "path-is-absolute",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "path-is-absolute@1.0.1",
+      "location": "node_modules/path-is-absolute"
+    },
+    "pinkie@2.0.4": {
+      "name": "pinkie",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "pinkie@2.0.4",
+      "location": "node_modules/pinkie"
+    },
+    "pinkie-promise@2.0.1": {
+      "name": "pinkie-promise",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "pinkie-promise@2.0.1",
+      "location": "node_modules/pinkie-promise"
+    },
+    "private@0.1.6": {
+      "name": "private",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "private@0.1.6",
+      "location": "node_modules/private"
+    },
+    "process-nextick-args@1.0.7": {
+      "name": "process-nextick-args",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "process-nextick-args@1.0.7",
+      "location": "node_modules/process-nextick-args"
+    },
+    "pump@1.0.1": {
+      "name": "pump",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "pump@1.0.1",
+      "location": "node_modules/pump"
+    },
+    "punycode@1.4.1": {
+      "name": "punycode",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "punycode@1.4.1",
+      "location": "node_modules/punycode"
+    },
+    "qs@6.3.0": {
+      "name": "qs",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "dist/qs.js": {
+            "cjsRequireDetection": false
+          },
+          "test/parse.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "test/stringify.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "qs@6.3.0",
+      "location": "node_modules/qs"
+    },
+    "readable-stream@2.2.2": {
+      "name": "readable-stream",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "lib/_stream_readable.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/_stream_writable.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "util": {
+            "browser": "@empty"
+          }
+        }
+      },
+      "key": "readable-stream@2.2.2",
+      "location": "node_modules/readable-stream"
+    },
+    "readdirp@2.1.0": {
+      "name": "readdirp",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "readdirp@2.1.0",
+      "location": "node_modules/readdirp"
+    },
+    "regenerator-runtime@0.9.6": {
+      "name": "regenerator-runtime",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "regenerator-runtime@0.9.6",
+      "location": "node_modules/regenerator-runtime"
+    },
+    "repeat-string@1.6.1": {
+      "name": "repeat-string",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "repeat-string@1.6.1",
+      "location": "node_modules/repeat-string"
+    },
+    "repeating@2.0.1": {
+      "name": "repeating",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "repeating@2.0.1",
+      "location": "node_modules/repeating"
+    },
+    "request@2.78.0": {
+      "name": "request",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "lib/helpers.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/multipart.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/oauth.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "request.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "request@2.78.0",
+      "location": "node_modules/request"
+    },
+    "right-align@0.1.3": {
+      "name": "right-align",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "right-align@0.1.3",
+      "location": "node_modules/right-align"
+    },
+    "rollup@0.36.3": {
+      "name": "rollup",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "dist/rollup.browser.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "dist/rollup.es.js": {
+            "format": "esm"
+          },
+          "dist/rollup.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "rollup@0.36.3",
+      "location": "node_modules/rollup"
+    },
+    "rsvp@3.3.3": {
+      "name": "rsvp",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "dist/rsvp.min.js": {
+            "format": "amd"
+          },
+          "lib/*": {
+            "format": "esm"
+          }
+        },
+        "map": {
+          "vertx": {
+            "browser": "@empty"
+          }
+        }
+      },
+      "key": "rsvp@3.3.3",
+      "location": "node_modules/rsvp"
+    },
+    "semver@5.3.0": {
+      "name": "semver",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "semver@5.3.0",
+      "location": "node_modules/semver"
+    },
+    "set-immediate-shim@1.0.1": {
+      "name": "set-immediate-shim",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "set-immediate-shim@1.0.1",
+      "location": "node_modules/set-immediate-shim"
+    },
+    "slash@1.0.0": {
+      "name": "slash",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "slash@1.0.0",
+      "location": "node_modules/slash"
+    },
+    "sntp@1.0.9": {
+      "name": "sntp",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "lib/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "test/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js",
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "sntp@1.0.9",
+      "location": "node_modules/sntp"
+    },
+    "source-map@0.5.6": {
+      "name": "source-map",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "source-map@0.5.6",
+      "location": "node_modules/source-map"
+    },
+    "source-map-support@0.2.10": {
+      "name": "source-map-support",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "amd-test/script.js": {
+            "format": "amd"
+          },
+          "source-map-support.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "test.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "source-map-support@0.2.10",
+      "location": "node_modules/source-map-support"
+    },
+    "sshpk@1.10.1": {
+      "name": "sshpk",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "lib/algs.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/certificate.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/dhe.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/ed-compat.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/fingerprint.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/formats/*": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/key.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/private-key.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/signature.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/ssh-buffer.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/utils.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "./lib": "./lib/index.js"
+        }
+      },
+      "key": "sshpk@1.10.1",
+      "location": "node_modules/sshpk"
+    },
+    "string_decoder@0.10.31": {
+      "name": "string_decoder",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          },
+          "index.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "string_decoder@0.10.31",
+      "location": "node_modules/string_decoder"
+    },
+    "stringstream@0.0.5": {
+      "name": "stringstream",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "example.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "stringstream.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "stringstream": "."
+        }
+      },
+      "key": "stringstream@0.0.5",
+      "location": "node_modules/stringstream"
+    },
+    "strip-ansi@3.0.1": {
+      "name": "strip-ansi",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "strip-ansi@3.0.1",
+      "location": "node_modules/strip-ansi"
+    },
+    "supports-color@2.0.0": {
+      "name": "supports-color",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "supports-color@2.0.0",
+      "location": "node_modules/supports-color"
+    },
+    "systemjs@0.19.41": {
+      "name": "systemjs",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "dist/system-polyfills.src.js": {
+            "cjsRequireDetection": false
+          },
+          "dist/system.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "dist/system.src.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "systemjs@0.19.41",
+      "location": "node_modules/systemjs"
+    },
+    "systemjs-builder@0.15.34": {
+      "name": "systemjs-builder",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "lib/output.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "templates/sfx-esm.js": {
+            "format": "esm"
+          }
+        }
+      },
+      "key": "systemjs-builder@0.15.34",
+      "location": "node_modules/systemjs-builder"
+    },
+    "tar-fs@1.14.0": {
+      "name": "tar-fs",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "tar-fs@1.14.0",
+      "location": "node_modules/tar-fs"
+    },
+    "tar-stream@1.5.2": {
+      "name": "tar-stream",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "headers.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "pack.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "tar-stream@1.5.2",
+      "location": "node_modules/tar-stream"
+    },
+    "to-fast-properties@1.0.2": {
+      "name": "to-fast-properties",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "to-fast-properties@1.0.2",
+      "location": "node_modules/to-fast-properties"
+    },
+    "tough-cookie@2.3.2": {
+      "name": "tough-cookie",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "tough-cookie@2.3.2",
+      "location": "node_modules/tough-cookie"
+    },
+    "traceur@0.0.105": {
+      "name": "traceur",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "dist/commonjs/node/NodeCompiler.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "src/Compiler.js": {
+            "format": "esm"
+          },
+          "src/HTMLImportTranscoder.js": {
+            "format": "esm"
+          },
+          "src/Options.js": {
+            "format": "esm"
+          },
+          "src/WebPageTranscoder.js": {
+            "format": "esm"
+          },
+          "src/browser/*": {
+            "format": "esm"
+          },
+          "src/codegeneration/*": {
+            "format": "esm"
+          },
+          "src/compiler-imports.js": {
+            "format": "esm"
+          },
+          "src/loader/InlineLoaderCompiler.js": {
+            "format": "esm"
+          },
+          "src/loader/InternalLoader.js": {
+            "format": "esm"
+          },
+          "src/loader/Loader.js": {
+            "format": "esm"
+          },
+          "src/loader/LoaderCompiler.js": {
+            "format": "esm"
+          },
+          "src/loader/ModuleStore.js": {
+            "format": "esm"
+          },
+          "src/loader/NodeTraceurLoader.js": {
+            "format": "esm"
+          },
+          "src/loader/TraceurLoader.js": {
+            "format": "esm"
+          },
+          "src/loader/loader-imports.js": {
+            "format": "esm"
+          },
+          "src/loader/system-map.js": {
+            "format": "esm"
+          },
+          "src/loader/version.js": {
+            "format": "esm"
+          },
+          "src/loader/webLoader.js": {
+            "format": "esm"
+          },
+          "src/node/NodeCompiler.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "src/node/NodeLoaderCompiler.js": {
+            "format": "esm"
+          },
+          "src/node/get-dependencies.js": {
+            "format": "esm"
+          },
+          "src/outputgeneration/ParseTreeMapWriter.js": {
+            "format": "esm"
+          },
+          "src/outputgeneration/ParseTreeWriter.js": {
+            "format": "esm"
+          },
+          "src/outputgeneration/SourceMapIntegration.js": {
+            "format": "esm"
+          },
+          "src/outputgeneration/SourceMapIntegration.js-template": {
+            "format": "esm"
+          },
+          "src/outputgeneration/TreeWriter.js": {
+            "format": "esm"
+          },
+          "src/outputgeneration/regexpuRewritePattern.js": {
+            "format": "esm"
+          },
+          "src/outputgeneration/toSource.js": {
+            "format": "esm"
+          },
+          "src/runtime/async.js": {
+            "format": "esm"
+          },
+          "src/runtime/checkObjectCoercible.js": {
+            "format": "esm"
+          },
+          "src/runtime/classes.js": {
+            "format": "esm"
+          },
+          "src/runtime/destructuring.js": {
+            "format": "esm"
+          },
+          "src/runtime/exportStar.js": {
+            "format": "esm"
+          },
+          "src/runtime/frozen-data.js": {
+            "format": "esm"
+          },
+          "src/runtime/generators.js": {
+            "format": "esm"
+          },
+          "src/runtime/global-imports.js": {
+            "format": "esm"
+          },
+          "src/runtime/has-native-symbols.js": {
+            "format": "esm"
+          },
+          "src/runtime/jsx.js": {
+            "format": "esm"
+          },
+          "src/runtime/modules/*": {
+            "format": "esm"
+          },
+          "src/runtime/new-unique-string.js": {
+            "format": "esm"
+          },
+          "src/runtime/polyfills-imports.js": {
+            "format": "esm"
+          },
+          "src/runtime/polyfills/*": {
+            "format": "esm"
+          },
+          "src/runtime/private-symbol.js": {
+            "format": "esm"
+          },
+          "src/runtime/private-weak-map.js": {
+            "format": "esm"
+          },
+          "src/runtime/private.js": {
+            "format": "esm"
+          },
+          "src/runtime/properTailCalls.js": {
+            "format": "esm"
+          },
+          "src/runtime/runtime-modules.js": {
+            "format": "esm"
+          },
+          "src/runtime/spread.js": {
+            "format": "esm"
+          },
+          "src/runtime/symbols.js": {
+            "format": "esm"
+          },
+          "src/runtime/template.js": {
+            "format": "esm"
+          },
+          "src/semantics/*": {
+            "format": "esm"
+          },
+          "src/staticsemantics/*": {
+            "format": "esm"
+          },
+          "src/syntax/IdentifierToken.js": {
+            "format": "esm"
+          },
+          "src/syntax/JsxIdentifierToken.js": {
+            "format": "esm"
+          },
+          "src/syntax/KeywordToken.js": {
+            "format": "esm"
+          },
+          "src/syntax/Keywords.js": {
+            "format": "esm"
+          },
+          "src/syntax/LineNumberTable.js": {
+            "format": "esm"
+          },
+          "src/syntax/LiteralToken.js": {
+            "format": "esm"
+          },
+          "src/syntax/ParseTreeValidator.js": {
+            "format": "esm"
+          },
+          "src/syntax/ParseTreeVisitor.js": {
+            "format": "esm"
+          },
+          "src/syntax/Parser.js": {
+            "format": "esm"
+          },
+          "src/syntax/PredefinedName.js": {
+            "format": "esm"
+          },
+          "src/syntax/Scanner.js": {
+            "format": "esm"
+          },
+          "src/syntax/SourceFile.js": {
+            "format": "esm"
+          },
+          "src/syntax/Token.js": {
+            "format": "esm"
+          },
+          "src/syntax/TokenType.js": {
+            "format": "esm"
+          },
+          "src/syntax/trees/ParseTree.js": {
+            "format": "esm"
+          },
+          "src/syntax/trees/ParseTreeType.js": {
+            "format": "esm"
+          },
+          "src/syntax/trees/ParseTrees.js": {
+            "format": "esm"
+          },
+          "src/syntax/trees/StateMachine.js": {
+            "format": "esm"
+          },
+          "src/syntax/unicode-tables.js": {
+            "format": "esm"
+          },
+          "src/traceur-import.js": {
+            "format": "esm"
+          },
+          "src/traceur.js": {
+            "format": "esm"
+          },
+          "src/util-imports.js": {
+            "format": "esm"
+          },
+          "src/util/*": {
+            "format": "esm"
+          }
+        }
+      },
+      "key": "traceur@0.0.105",
+      "location": "node_modules/traceur"
+    },
+    "tunnel-agent@0.4.3": {
+      "name": "tunnel-agent",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "index.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "tunnel-agent@0.4.3",
+      "location": "node_modules/tunnel-agent"
+    },
+    "tweetnacl@0.14.3": {
+      "name": "tweetnacl",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "buffer": {
+            "browser": "@empty"
+          },
+          "crypto": {
+            "browser": "@empty"
+          }
+        }
+      },
+      "key": "tweetnacl@0.14.3",
+      "location": "node_modules/tweetnacl"
+    },
+    "uglify-js@2.7.4": {
+      "name": "uglify-js",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "tools/node.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "uglify-js@2.7.4",
+      "location": "node_modules/uglify-js"
+    },
+    "uglify-to-browserify@1.0.2": {
+      "name": "uglify-to-browserify",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "uglify-to-browserify@1.0.2",
+      "location": "node_modules/uglify-to-browserify"
+    },
+    "util-deprecate@1.0.2": {
+      "name": "util-deprecate",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./node.js": {
+            "browser": "./browser.js"
+          }
+        }
+      },
+      "key": "util-deprecate@1.0.2",
+      "location": "node_modules/util-deprecate"
+    },
+    "verror@1.3.6": {
+      "name": "verror",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "verror@1.3.6",
+      "location": "node_modules/verror"
+    },
+    "when@3.7.7": {
+      "name": "when",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "dist/browser/when.debug.js": {
+            "cjsRequireDetection": false
+          },
+          "dist/browser/when.js": {
+            "cjsRequireDetection": false
+          },
+          "es6-shim/Promise.js": {
+            "cjsRequireDetection": false
+          }
+        },
+        "map": {
+          "vertx": {
+            "browser": "@empty"
+          },
+          "when": {
+            "browser": "./dist/browser/when.js"
+          }
+        }
+      },
+      "key": "when@3.7.7",
+      "location": "node_modules/when"
+    },
+    "which@1.2.12": {
+      "name": "which",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "which@1.2.12",
+      "location": "node_modules/which"
+    },
+    "window-size@0.1.0": {
+      "name": "window-size",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "window-size@0.1.0",
+      "location": "node_modules/window-size"
+    },
+    "wordwrap@0.0.2": {
+      "name": "wordwrap",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "wordwrap": "."
+        }
+      },
+      "key": "wordwrap@0.0.2",
+      "location": "node_modules/wordwrap"
+    },
+    "wrappy@1.0.2": {
+      "name": "wrappy",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "wrappy@1.0.2",
+      "location": "node_modules/wrappy"
+    },
+    "xtend@4.0.1": {
+      "name": "xtend",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "xtend@4.0.1",
+      "location": "node_modules/xtend"
+    },
+    "yargs@3.10.0": {
+      "name": "yargs",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "yargs@3.10.0",
+      "location": "node_modules/yargs"
+    },
+    "readable-stream@2.0.6": {
+      "name": "readable-stream",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "lib/_stream_readable.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "lib/_stream_writable.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        },
+        "map": {
+          "util": {
+            "browser": "@empty"
+          }
+        }
+      },
+      "key": "readable-stream@2.0.6",
+      "location": "node_modules/bl/node_modules/readable-stream"
+    },
+    "once@1.3.3": {
+      "name": "once",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        }
+      },
+      "key": "once@1.3.3",
+      "location": "node_modules/end-of-stream/node_modules/once"
+    },
+    "assert-plus@1.0.0": {
+      "name": "assert-plus",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "assert.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "assert-plus@1.0.0",
+      "location": "node_modules/sshpk/node_modules/assert-plus"
+    },
+    "d@0.1.1": {
+      "name": "d",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "./test": "./test/index.js"
+        }
+      },
+      "key": "d@0.1.1",
+      "location": "node_modules/es6-symbol/node_modules/d"
+    },
+    "source-map-support@0.4.6": {
+      "name": "source-map-support",
+      "config": {
+        "meta": {
+          "*": {
+            "globals": {
+              "process": "process"
+            }
+          },
+          "*.json": {
+            "format": "json"
+          },
+          "source-map-support.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          },
+          "test.js": {
+            "globals": {
+              "Buffer": "buffer/global"
+            }
+          }
+        }
+      },
+      "key": "source-map-support@0.4.6",
+      "location": "node_modules/rollup/node_modules/source-map-support"
+    },
+    "source-map@0.1.32": {
+      "name": "source-map",
+      "config": {
+        "meta": {
+          "*.json": {
+            "format": "json"
+          }
+        },
+        "map": {
+          "source-map": "."
+        }
+      },
+      "key": "source-map@0.1.32",
+      "location": "node_modules/source-map-support/node_modules/source-map"
+    }
+  }
+}

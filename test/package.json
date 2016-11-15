@@ -1,0 +1,21 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "jspm": {
+    "name": "test",
+    "main": "test.js",
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.17"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ajv": "^4.9.0",
+    "babel": "^6.5.2",
+    "babel-generator": "^6.18.0",
+    "jspm": "^0.16.48",
+    "react": "^15.3.2",
+    "yarn": "^0.17.0"
+  }
+}
