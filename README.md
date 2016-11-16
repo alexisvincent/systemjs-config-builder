@@ -10,3 +10,10 @@ The easiest way to include modules in SystemJS is *currently* through JSPM. This
 #### See [#1](https://github.com/alexisvincent/systemjs-config-builder/issues/1) for plans to not need JSPM anymore
 Currently, given this [package.json](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/package.json), 
 SystemJS Config Builder generates this [config](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/generated.config.js).
+
+## Usage [Testing]
+`npm install --global systemjs-tools`
+
+and then in the directory that contains the package.json you want to generate for
+
+`systemjs config`
