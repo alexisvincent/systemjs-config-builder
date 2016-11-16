@@ -195,25 +195,17 @@ var pruneModuleTree = exports.pruneModuleTree = function pruneModuleTree(_ref6) 
     });
 };
 
-var generatePackageListing = exports.generatePackageListing = function generatePackageListing(_ref7) {
-    var name = _ref7.name,
-        config = _ref7.config,
-        key = _ref7.key,
-        location = _ref7.location;
-};
-
 /**
- * Walk the tree (ignores the root)
+ * Walk the tree
  * @param tree
  * @param registry
  * @param f
- * @param ignoreRoot
  * @param depth
  * @param skip
  */
-var walkTree = exports.walkTree = function walkTree(_ref8, f) {
-    var tree = _ref8.tree,
-        registry = _ref8.registry;
+var walkTree = exports.walkTree = function walkTree(_ref7, f) {
+    var tree = _ref7.tree,
+        registry = _ref7.registry;
     var depth = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : Infinity;
     var skip = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 0;
 
@@ -231,9 +223,9 @@ var walkTree = exports.walkTree = function walkTree(_ref8, f) {
     }
 };
 
-var generateConfig = exports.generateConfig = function generateConfig(_ref9) {
-    var tree = _ref9.tree,
-        registry = _ref9.registry;
+var generateConfig = exports.generateConfig = function generateConfig(_ref8) {
+    var tree = _ref8.tree,
+        registry = _ref8.registry;
 
     var systemConfig = {
         "map": {},
@@ -241,33 +233,33 @@ var generateConfig = exports.generateConfig = function generateConfig(_ref9) {
     };
 
     // Top level maps
-    walkTree({ tree: tree, registry: registry }, function (_ref10, deps) {
-        var name = _ref10.name,
-            config = _ref10.config,
-            key = _ref10.key,
-            location = _ref10.location;
+    walkTree({ tree: tree, registry: registry }, function (_ref9, deps) {
+        var name = _ref9.name,
+            config = _ref9.config,
+            key = _ref9.key,
+            location = _ref9.location;
 
         systemConfig['map'][name] = './' + location;
     }, 2, 1);
 
     // Walk the others and generate package entries
-    walkTree({ tree: tree, registry: registry }, function (_ref11, deps, tree) {
-        var name = _ref11.name,
-            _ref11$config = _ref11.config,
-            map = _ref11$config.map,
-            meta = _ref11$config.meta,
-            key = _ref11.key,
-            location = _ref11.location;
+    walkTree({ tree: tree, registry: registry }, function (_ref10, deps, tree) {
+        var name = _ref10.name,
+            _ref10$config = _ref10.config,
+            map = _ref10$config.map,
+            meta = _ref10$config.meta,
+            key = _ref10.key,
+            location = _ref10.location;
 
         // console.log(location)
 
         var depMappings = {};
 
-        walkTree({ tree: tree, registry: registry }, function (_ref12, deps) {
-            var name = _ref12.name,
-                config = _ref12.config,
-                key = _ref12.key,
-                location = _ref12.location;
+        walkTree({ tree: tree, registry: registry }, function (_ref11, deps) {
+            var name = _ref11.name,
+                config = _ref11.config,
+                key = _ref11.key,
+                location = _ref11.location;
 
             depMappings[name] = './' + location;
         }, 2, 1);
@@ -286,17 +278,16 @@ var serializeConfig = exports.serializeConfig = function serializeConfig(config)
 };
 
 var start = new Date().getTime();
-//
-pfs.readFile('./cache.json', 'utf8').then(JSON.parse).then(generateConfig).then(serializeConfig).then(pfs.writeFile.bind(null, './generated.config.js'));
-// .then(config => console.log(inspect(config, {depth: null})))
 
+pfs.readFile('./cache.json', 'utf8').then(JSON.parse)
 // traceModuleTree('.')
 //     .then(augmentModuleTree)
 //     .then(pruneModuleTree)
-// .then(generateConfig)
-//     .then(config => console.log(inspect(config, {depth: null})))
-//     .then(() => console.log((new Date().getTime() - start)/1000 + ' seconds'))
-// .then(config => console.log(JSON.stringify(config)))
+.then(generateConfig).then(serializeConfig).then(pfs.writeFile.bind(null, './generated.config.js'))
+// .then(config => console.log(inspect(config, {depth: null})))
+.then(function () {
+    return console.log((new Date().getTime() - start) / 1000 + ' seconds');
+});
 
 // getDirectories('./test').then(console.log.bind(console))
 // getOwnDeps('./test').then(console.log.bind(console))
