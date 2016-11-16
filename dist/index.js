@@ -301,7 +301,7 @@ var readCache = function readCache() {
     });
 };
 
-generateCache('.').then(readCache);
+// generateCache('.').then(readCache)
 
 // getDirectories('./test').then(console.log.bind(console))
 // getOwnDeps('./test').then(console.log.bind(console))
