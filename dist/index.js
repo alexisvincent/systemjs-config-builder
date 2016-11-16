@@ -17,6 +17,8 @@ var _require = require('jspm-npm/lib/node-conversion'),
 var _require2 = require('util'),
     inspect = _require2.inspect;
 
+var nodeCoreModules = ['assert', 'buffer', 'child_process', 'cluster', 'console', 'constants', 'crypto', 'dgram', 'dns', 'domain', 'events', 'fs', 'http', 'https', 'module', 'net', 'os', 'path', 'process', 'punycode', 'querystring', 'readline', 'repl', 'stream', 'string_decoder', 'sys', 'timers', 'tls', 'tty', 'url', 'util', 'vm', 'zlib'];
+
 var pfs = {};
 
 /**
@@ -154,14 +156,6 @@ var traceModuleTree = exports.traceModuleTree = function traceModuleTree(directo
     });
 };
 
-var augmentModuleTree = exports.augmentModuleTree = function augmentModuleTree(_ref5) {
-    var tree = _ref5.tree,
-        registry = _ref5.registry;
-    return augmentRegistry(registry).then(function (registry) {
-        return { tree: tree, registry: registry };
-    });
-};
-
 var objectify = function objectify(key, array) {
     return array.reduce(function (obj, arrayItem) {
         obj[arrayItem[key]] = arrayItem;
@@ -174,15 +168,23 @@ var augmentRegistry = exports.augmentRegistry = function augmentRegistry(registr
         var depMap = registry[key];
 
         return convertPackage(depMap.config, ':' + key, './' + depMap.location, console).then(function (config) {
-            return Object.assign({}, depMap, { config: config });
-        });
+            return Object.assign(depMap, { config: config });
+        }).catch(log);
     })).then(objectify.bind(null, 'key'));
+};
+
+var augmentModuleTree = exports.augmentModuleTree = function augmentModuleTree(_ref5) {
+    var tree = _ref5.tree,
+        registry = _ref5.registry;
+    return augmentRegistry(registry).then(function (registry) {
+        return { tree: tree, registry: registry };
+    });
 };
 
 var pruneRegistry = exports.pruneRegistry = function pruneRegistry(registry) {
     return Promise.resolve(objectify('key', Object.keys(registry).map(function (key) {
         return Object.assign({}, registry[key], {
-            config: _.pick(registry[key].config, ['meta', 'map'])
+            config: _.pick(registry[key].config, ['meta', 'map', 'main', 'format', 'defaultExtension', 'defaultJSExtensions'])
         });
     })));
 };
@@ -232,6 +234,10 @@ var generateConfig = exports.generateConfig = function generateConfig(_ref8) {
         "packages": {}
     };
 
+    // nodeCoreModules.forEach(lib => {
+    //     systemConfig['map'][lib] = "node_modules/jspm-nodelibs-" + lib
+    // })
+
     // Top level maps
     walkTree({ tree: tree, registry: registry }, function (_ref9, deps) {
         var name = _ref9.name,
@@ -239,19 +245,16 @@ var generateConfig = exports.generateConfig = function generateConfig(_ref8) {
             key = _ref9.key,
             location = _ref9.location;
 
-        systemConfig['map'][name] = './' + location;
+        systemConfig['map'][name] = location;
     }, 2, 1);
 
     // Walk the others and generate package entries
     walkTree({ tree: tree, registry: registry }, function (_ref10, deps, tree) {
         var name = _ref10.name,
-            _ref10$config = _ref10.config,
-            map = _ref10$config.map,
-            meta = _ref10$config.meta,
+            config = _ref10.config,
             key = _ref10.key,
             location = _ref10.location;
 
-        // console.log(location)
 
         var depMappings = {};
 
@@ -261,13 +264,19 @@ var generateConfig = exports.generateConfig = function generateConfig(_ref8) {
                 key = _ref11.key,
                 location = _ref11.location;
 
-            depMappings[name] = './' + location;
+            depMappings[name] = location;
         }, 2, 1);
 
-        systemConfig['packages']['./' + location] = {
-            map: Object.assign({}, map, depMappings),
-            meta: meta
-        };
+        var packageEntry = Object.assign({
+            map: {},
+            meta: {}
+        }, config);
+
+        packageEntry['map'] = Object.assign(packageEntry['map'], depMappings);
+
+        if (Object.keys(packageEntry['map']).length == 0) delete packageEntry['map'];
+
+        systemConfig['packages'][location] = packageEntry;
     }, Infinity, 1);
 
     return Promise.resolve(systemConfig);
@@ -277,17 +286,22 @@ var serializeConfig = exports.serializeConfig = function serializeConfig(config)
     return 'SystemJS.config(' + JSON.stringify(config) + ')';
 };
 
-var start = new Date().getTime();
+var generateCache = function generateCache(dir) {
+    var start = new Date().getTime();
+    return traceModuleTree(dir).then(augmentModuleTree).then(pruneModuleTree).then(JSON.stringify).then(pfs.writeFile.bind(null, './cache.json')).then(function () {
+        return console.log((new Date().getTime() - start) / 1000 + ' seconds');
+    });
+};
 
-pfs.readFile('./cache.json', 'utf8').then(JSON.parse)
-// traceModuleTree('.')
-//     .then(augmentModuleTree)
-//     .then(pruneModuleTree)
-.then(generateConfig).then(serializeConfig).then(pfs.writeFile.bind(null, './generated.config.js'))
-// .then(config => console.log(inspect(config, {depth: null})))
-.then(function () {
-    return console.log((new Date().getTime() - start) / 1000 + ' seconds');
-});
+var readCache = function readCache() {
+    var start = new Date().getTime();
+
+    return pfs.readFile('./cache.json', 'utf8').then(JSON.parse).then(generateConfig).then(serializeConfig).then(pfs.writeFile.bind(null, './generated.config.js')).then(function () {
+        return console.log((new Date().getTime() - start) / 1000 + ' seconds');
+    });
+};
+
+generateCache('.').then(readCache);
 
 // getDirectories('./test').then(console.log.bind(console))
 // getOwnDeps('./test').then(console.log.bind(console))

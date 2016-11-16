@@ -15,6 +15,7 @@
   "author": "Alexis Vincent <alexisjohnvincent@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "assert": "^1.4.1",
     "bluebird": "^3.4.6",
     "chokidar": "^1.6.1",
     "graceful-fs": "^4.1.10",
