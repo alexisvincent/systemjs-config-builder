@@ -55,7 +55,8 @@ var getPackageConfig = exports.getPackageConfig = function getPackageConfig(dir)
         return Object.assign({
             dependencies: {},
             devDependencies: {},
-            peerDependencies: {}
+            peerDependencies: {},
+            augmented: false
         }, config);
     }).catch(function () {
         return null;
@@ -167,8 +168,8 @@ var augmentRegistry = exports.augmentRegistry = function augmentRegistry(registr
     return Promise.all(Object.keys(registry).map(function (key) {
         var depMap = registry[key];
 
-        return convertPackage(depMap.config, ':' + key, './' + depMap.location, console).then(function (config) {
-            return Object.assign(depMap, { config: config });
+        return depMap.augmented ? depMap : convertPackage(depMap.config, ':' + key, './' + depMap.location, console).then(function (config) {
+            return Object.assign(depMap, { config: config, augmented: true });
         }).catch(log);
     })).then(objectify.bind(null, 'key'));
 };
@@ -282,24 +283,52 @@ var generateConfig = exports.generateConfig = function generateConfig(_ref8) {
     return Promise.resolve(systemConfig);
 };
 
+// This needs to be done better (fails if locations of shit changes)
+var mergeCache = exports.mergeCache = function mergeCache(registry, cachedRegistry) {
+    return Object.assign({}, registry, cachedRegistry);
+};
+
+var fromCache = exports.fromCache = function fromCache(_ref12) {
+    var tree = _ref12.tree,
+        registry = _ref12.registry;
+
+    return dehydrateCache().then(function (cachedRegistry) {
+        return { tree: tree, registry: mergeCache(registry, cachedRegistry) };
+    });
+};
+
+var toCache = exports.toCache = function toCache(_ref13) {
+    var tree = _ref13.tree,
+        registry = _ref13.registry;
+
+    return hydrateCache(registry).then(function () {
+        return { tree: tree, registry: registry };
+    });
+};
+
 var serializeConfig = exports.serializeConfig = function serializeConfig(config) {
     return 'SystemJS.config(' + JSON.stringify(config) + ')';
 };
 
-var generateCache = function generateCache(dir) {
-    var start = new Date().getTime();
-    return traceModuleTree(dir).then(augmentModuleTree).then(pruneModuleTree).then(JSON.stringify).then(pfs.writeFile.bind(null, './cache.json')).then(function () {
-        return console.log((new Date().getTime() - start) / 1000 + ' seconds');
+var hydrateCache = function hydrateCache(registry) {
+    return Promise.resolve(JSON.stringify(registry)).then(pfs.writeFile.bind(null, './systemjs.cache'));
+};
+
+var dehydrateCache = function dehydrateCache() {
+    return pfs.readFile('./systemjs.cache', 'utf8').then(JSON.parse).catch(function (e) {
+        console.log("No cache, parsing node_modules. Warning this may take a while.");
+        return {};
     });
 };
 
-var readCache = function readCache() {
-    var start = new Date().getTime();
-
-    return pfs.readFile('./cache.json', 'utf8').then(JSON.parse).then(generateConfig).then(serializeConfig).then(pfs.writeFile.bind(null, './generated.config.js')).then(function () {
-        return console.log((new Date().getTime() - start) / 1000 + ' seconds');
-    });
-};
+// traceModuleTree('.')
+//     .then(fromCache)
+//     .then(augmentModuleTree)
+//     .then(toCache)
+//     .then(pruneModuleTree)
+//     .then(generateConfig)
+//     .then(serializeConfig)
+//     .then(pfs.writeFile.bind(null, './generated.config.js'))
 
 // generateCache('.').then(readCache)
 
