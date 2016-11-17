@@ -14,7 +14,9 @@ The easiest way to include modules in SystemJS is *currently* through JSPM. This
 - [ ] Allow simple local overrides
 - [ ] Use own @node polyfills. See [#1](https://github.com/alexisvincent/systemjs-config-builder/issues/1) for progress
 - [ ] Use JSPM overrides
+- [ ] Allow dependency filtering (so we don't include deps meant for just the server)
 - [ ] Allow configurabilility
+- [ ] Make more robust
 
 Currently, given this [package.json](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/package.json), 
 SystemJS Config Builder generates this [config](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/generated.config.js).
