@@ -11,9 +11,10 @@ The easiest way to include modules in SystemJS is *currently* through JSPM. This
 - [x] Generate valid SystemJS config file
 - [x] Make sure loading React.JS works
 - [x] Cache registry (to speed up subsequent generations)
-- [ ] Allow simple local overrides
 - [ ] Use own @node polyfills. See [#1](https://github.com/alexisvincent/systemjs-config-builder/issues/1) for progress
+- [ ] Allow simple local overrides
 - [ ] Use JSPM overrides
+- [ ] Fully support npm resolve algorithym (upper node_module and single dep node_modules)
 - [ ] Allow dependency filtering (so we don't include deps meant for just the server)
 - [ ] Allow configurabilility
 - [ ] Make more robust
