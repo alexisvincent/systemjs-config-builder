@@ -6,13 +6,24 @@ Generate SystemJS config files from node_modules
 The easiest way to include modules in SystemJS is *currently* through JSPM. This project aims to provide an alternative, by leveraging the deterministic installs of Yarn and generating config files to explain to SystemJS how to resolve modules from `node_modules`.
 
 ## Progress
-### It works :D (Needs JSPM for the @node polyfills)
-#### See [#1](https://github.com/alexisvincent/systemjs-config-builder/issues/1) for plans to not need JSPM anymore
+
+- [x] Trace node_modules and build registry
+- [x] Generage compatability configs for packages
+- [x] Generate valid SystemJS config file
+- [x] Make use loading React.JS works
+- [x] Cache registry (to speed up subsequent generations)
+- [ ] Allow simple local overrides
+- [ ] Use own @node polyfills. See [#1](https://github.com/alexisvincent/systemjs-config-builder/issues/1) for progress
+- [ ] Use JSPM overrides
+- [ ] Allow configurabilility
+
 Currently, given this [package.json](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/package.json), 
 SystemJS Config Builder generates this [config](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/generated.config.js).
 
-## Usage [Testing]
-`npm install --global systemjs-tools`
+## Usage
+You can test the generation via the cli in [systemjs-tools](https://github.com/alexisvincent/systemjs-tools).
+
+`npm install --global systemjs-tools` or `yarn global add systemjs-tools`
 
 and then in the directory that contains the package.json you want to generate for
 
