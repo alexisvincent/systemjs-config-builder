@@ -2,6 +2,14 @@
 This project contains three files, [index.html](./index.html), [app.js](./app.js)
 and a [package.json](./package.json) with a `postinstall` hook.
 
+## Quick Start
+
+    # Run
+    yarn global add systemjs-tools serve
+    yarn add systemjs systemjs-nodelibs systemjs-plugin-babel react react-dom
+    systemjs config
+    serve .
+
 ## Prerequisites
 
 Install systemjs-tools (for config generation)
