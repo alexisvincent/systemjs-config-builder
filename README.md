@@ -14,9 +14,9 @@ The easiest way to include modules in SystemJS is *currently* through JSPM. This
 - [x] Use own @node polyfills. See [#1](https://github.com/alexisvincent/systemjs-config-builder/issues/1) for progress
 - [x] Respect `jspmPackage: true`
 - [x] Perform path optimisations (nm: -> node_modules), for smaller configs
+- [ ] Fully support npm resolve algorithym (upper node_module and single dep node_modules)
 - [ ] Allow simple local overrides
 - [ ] Use JSPM overrides
-- [ ] Fully support npm resolve algorithym (upper node_module and single dep node_modules)
 - [ ] Allow dependency filtering (so we don't include deps meant for just the server)
 - [ ] Allow configurability
 - [ ] Make more robust
