@@ -4,7 +4,7 @@ Generate SystemJS config files from node_modules
 ## Overview
 The easiest way to include modules in SystemJS is *currently* through JSPM. This project aims to provide an alternative, by leveraging the deterministic installs of Yarn (also works with npm) and generating config files to explain to SystemJS how to resolve modules from `node_modules`.
 
-## Progress
+## Roadmap
 
 - [x] Trace node_modules and build registry
 - [x] Generage compatability configs for packages
@@ -12,6 +12,7 @@ The easiest way to include modules in SystemJS is *currently* through JSPM. This
 - [x] Make sure loading React.JS works
 - [x] Cache registry (to speed up subsequent generations)
 - [x] Use own @node polyfills. See [#1](https://github.com/alexisvincent/systemjs-config-builder/issues/1) for progress
+- [ ] Perform path optimisations (nm: -> node_modules), for smaller configs
 - [ ] Allow simple local overrides
 - [ ] Use JSPM overrides
 - [ ] Fully support npm resolve algorithym (upper node_module and single dep node_modules)
