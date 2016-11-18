@@ -19,6 +19,14 @@ var _require2 = require('util'),
 
 var nodeCoreModules = exports.nodeCoreModules = ['assert', 'buffer', 'child_process', 'cluster', 'console', 'constants', 'crypto', 'dgram', 'dns', 'domain', 'events', 'fs', 'http', 'https', 'module', 'net', 'os', 'path', 'process', 'punycode', 'querystring', 'readline', 'repl', 'stream', 'string_decoder', 'sys', 'timers', 'tls', 'tty', 'url', 'util', 'vm', 'zlib'];
 
+var compatLibs = [
+    //     'console',
+    //     'https',
+    //     'path',
+    //     'util',
+    //     'zlib'
+];
+
 var pfs = {};
 
 /**
@@ -185,7 +193,9 @@ var augmentModuleTree = exports.augmentModuleTree = function augmentModuleTree(_
 var pruneRegistry = exports.pruneRegistry = function pruneRegistry(registry) {
     return Promise.resolve(objectify('key', Object.keys(registry).map(function (key) {
         return Object.assign({}, registry[key], {
-            config: _.pick(registry[key].config, ['meta', 'map', 'main', 'format', 'defaultExtension', 'defaultJSExtensions'])
+            config: _.pick(registry[key].config, ['meta', 'map', 'main',
+            // 'format',
+            'defaultExtension', 'defaultJSExtensions'])
         });
     })));
 };
@@ -235,9 +245,7 @@ var generateConfig = exports.generateConfig = function generateConfig(_ref8) {
         "packages": {}
     };
 
-    // nodeCoreModules.forEach(lib => {
-    //     systemConfig['map'][lib] = "node_modules/jspm-nodelibs-" + lib
-    // })
+    systemConfig['map']["_stream_transform"] = "node_modules/readable-stream/transform";
 
     // Top level maps
     walkTree({ tree: tree, registry: registry }, function (_ref9, deps) {
@@ -278,6 +286,10 @@ var generateConfig = exports.generateConfig = function generateConfig(_ref8) {
         if (Object.keys(packageEntry['map']).length == 0) delete packageEntry['map'];
 
         systemConfig['packages'][location] = packageEntry;
+
+        nodeCoreModules.forEach(function (lib) {
+            systemConfig['map'][lib] = "node_modules/jspm-nodelibs-" + lib;
+        });
     }, Infinity, 1);
 
     return Promise.resolve(systemConfig);
@@ -321,14 +333,7 @@ var dehydrateCache = function dehydrateCache() {
     });
 };
 
-// traceModuleTree('.')
-//     .then(fromCache)
-//     .then(augmentModuleTree)
-//     .then(toCache)
-//     .then(pruneModuleTree)
-//     .then(generateConfig)
-//     .then(serializeConfig)
-//     .then(pfs.writeFile.bind(null, './generated.config.js'))
+traceModuleTree('.').then(fromCache).then(augmentModuleTree).then(toCache).then(pruneModuleTree).then(generateConfig).then(serializeConfig).then(pfs.writeFile.bind(null, './generated.config.js'));
 
 // generateCache('.').then(readCache)
 
