@@ -49,3 +49,7 @@ package.json
   }
 }
 ```
+
+## Thanks
+Thanks to [Juha Järvi](https://github.com/jjrv) for helping me flesh out this idea and for the discussions regarding
+his awesome [cbuild project](https://github.com/charto/cbuild).
