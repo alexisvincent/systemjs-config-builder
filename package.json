@@ -1,6 +1,6 @@
 {
   "name": "systemjs-config-builder",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generate SystemJS config files from node_modules",
   "main": "dist/index.js",
   "scripts": {
