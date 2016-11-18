@@ -319,7 +319,7 @@ var toCache = exports.toCache = function toCache(_ref13) {
 };
 
 var serializeConfig = exports.serializeConfig = function serializeConfig(config) {
-    return 'SystemJS.config(' + JSON.stringify(config) + ')';
+    return 'SystemJS.config(' + JSON.stringify(config, null, 2) + ')';
 };
 
 var hydrateCache = function hydrateCache(registry) {
