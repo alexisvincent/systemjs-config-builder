@@ -19,8 +19,8 @@ The easiest way to include modules in SystemJS is *currently* through JSPM. This
 - [ ] Allow configurability
 - [ ] Make more robust
 
-Currently, given this [package.json](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/package.json), 
-SystemJS Config Builder generates this [config](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/generated.config.js).
+Currently, given this [package.json](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/babel/package.json), 
+SystemJS Config Builder generates this [config](https://github.com/alexisvincent/systemjs-config-builder/blob/master/test/babel/generated.config.js).
 
 ## Usage
 You can test the generation via the cli in [systemjs-tools](https://github.com/alexisvincent/systemjs-tools).
