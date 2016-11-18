@@ -1,5 +1,6 @@
 # Example Project
-This project contains two files, [index.html](./index.html) and [app.js](./app.js).
+This project contains three files, [index.html](./index.html), [app.js](./app.js)
+and a [package.json](./package.json) with a postinstall hook.
 
 ## Prerequisites
 
@@ -7,19 +8,15 @@ Install systemjs-tools (for config generation)
 
 `yarn global add systemjs-tools`
 
+Everytime we do a `yarn add`, we will need to regenerate the config.
+There is a `postinstall` hook to do this for you, but if you notice 
+anything strange, just run `systemjs config` in the `package.json` directory.
+
 ## Basic install 
-
-Initialise package.json
-
-`yarn init -y`                 
 
 Install dependencies
 
 `yarn add systemjs systemjs-nodelibs react react-dom`
-
-Generate the SystemJS config file from node_modules
-
-`systemjs config`         
 
 Serve the current directory at http://localhost:3000
 
@@ -32,10 +29,6 @@ Serve the current directory at http://localhost:3000
 Add babel plugin
 
 `yarn add systemjs-plugin-babel`
-
-Regenerate config
-
-`systemjs config`
 
 ***Update index file to use new transpiler***
 
