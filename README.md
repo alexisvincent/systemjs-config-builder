@@ -1,4 +1,4 @@
-# SystemJS Config Builder [experimental]
+# SystemJS Config Builder
 Generate SystemJS config files from node_modules
 
 ## Overview
