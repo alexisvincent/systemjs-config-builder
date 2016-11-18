@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "config": "node ../dist/index.js",
+    "config": "node ../../dist/index.js",
     "start": "serve",
     "postinstall": "npm run config"
   },
