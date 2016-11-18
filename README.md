@@ -38,3 +38,15 @@ and generate the config
 
 `systemjs config`
 
+optionally you can also add a postinstall hook to do this automatically
+
+package.json
+```json
+{
+  ...
+  "scripts": {
+    ...
+    "postinstall": "systemjs config"
+  }
+}
+```
