@@ -27,7 +27,7 @@ Serve the current directory at http://localhost:3000
 
 ## Augment the installation to support ES6 (using babel)
 
-Update app.js to be ES6 version
+***Update app.js to be ES6 version***
 
 Add babel plugin
 
@@ -37,7 +37,7 @@ Regenerate config
 
 `systemjs config`
 
-Update index file to use new transpiler
+***Update index file to use new transpiler***
 
 Serve the current directory at http://localhost:3000
 
