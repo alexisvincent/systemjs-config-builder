@@ -19,14 +19,6 @@ var _require2 = require('util'),
 
 var nodeCoreModules = exports.nodeCoreModules = ['assert', 'buffer', 'child_process', 'cluster', 'console', 'constants', 'crypto', 'dgram', 'dns', 'domain', 'events', 'fs', 'http', 'https', 'module', 'net', 'os', 'path', 'process', 'punycode', 'querystring', 'readline', 'repl', 'stream', 'string_decoder', 'sys', 'timers', 'tls', 'tty', 'url', 'util', 'vm', 'zlib'];
 
-var compatLibs = [
-    //     'console',
-    //     'https',
-    //     'path',
-    //     'util',
-    //     'zlib'
-];
-
 var pfs = {};
 
 /**
@@ -176,9 +168,19 @@ var augmentRegistry = exports.augmentRegistry = function augmentRegistry(registr
     return Promise.all(Object.keys(registry).map(function (key) {
         var depMap = registry[key];
 
-        return depMap.augmented ? depMap : convertPackage(depMap.config, ':' + key, './' + depMap.location, console).then(function (config) {
+        var shouldAugment = !depMap.augmented;
+
+        if (depMap.config.jspmPackage != undefined && depMap.config.jspmPackage) shouldAugment = false;
+
+        if (depMap.config.jspmNodeConversion !== undefined && !depMap.config.jspmNodeConversion) shouldAugment = false;
+
+        if (depMap.config.jspm !== undefined && depMap.config.jspm.jspmNodeConversion !== undefined && !depMap.config.jspm.jspmNodeConversion) shouldAugment = false;
+
+        console.log(depMap.location, shouldAugment);
+
+        return shouldAugment ? convertPackage(depMap.config, ':' + key, './' + depMap.location, console).then(function (config) {
             return Object.assign(depMap, { config: config, augmented: true });
-        }).catch(log);
+        }).catch(log) : depMap;
     })).then(objectify.bind(null, 'key'));
 };
 
@@ -193,9 +195,7 @@ var augmentModuleTree = exports.augmentModuleTree = function augmentModuleTree(_
 var pruneRegistry = exports.pruneRegistry = function pruneRegistry(registry) {
     return Promise.resolve(objectify('key', Object.keys(registry).map(function (key) {
         return Object.assign({}, registry[key], {
-            config: _.pick(registry[key].config, ['meta', 'map', 'main',
-            // 'format',
-            'defaultExtension', 'defaultJSExtensions'])
+            config: _.pick(registry[key].config, ['meta', 'map', 'main', 'format', 'defaultExtension', 'defaultJSExtensions'])
         });
     })));
 };
@@ -292,6 +292,21 @@ var generateConfig = exports.generateConfig = function generateConfig(_ref8) {
         });
     }, Infinity, 1);
 
+    systemConfig['paths'] = {
+        'nm:': 'node_modules/'
+    };
+
+    Object.keys(systemConfig['map']).forEach(function (key) {
+        systemConfig['map'][key] = systemConfig['map'][key].replace(/^node_modules\//, 'nm:');
+    });
+
+    Object.keys(systemConfig['packages']).forEach(function (key) {
+        if (key.startsWith('node_modules/')) {
+            systemConfig['packages'][key.replace(/^node_modules\//, 'nm:')] = systemConfig['packages'][key];
+            delete systemConfig['packages'][key];
+        }
+    });
+
     return Promise.resolve(systemConfig);
 };
 
@@ -332,11 +347,3 @@ var dehydrateCache = function dehydrateCache() {
         return {};
     });
 };
-
-traceModuleTree('.').then(fromCache).then(augmentModuleTree).then(toCache).then(pruneModuleTree).then(generateConfig).then(serializeConfig).then(pfs.writeFile.bind(null, './generated.config.js'));
-
-// generateCache('.').then(readCache)
-
-// getDirectories('./test').then(console.log.bind(console))
-// getOwnDeps('./test').then(console.log.bind(console))
-// getPackageConfig('.').then(console.log.bind(console))
