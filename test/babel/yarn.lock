@@ -575,6 +575,10 @@ systemjs-nodelibs@^1.0.0:
     jspm-nodelibs-zlib jspm/nodelibs-zlib
     readable-stream "^2.0.2"
 
+systemjs-plugin-babel@^0.0.17:
+  version "0.0.17"
+  resolved "https://registry.yarnpkg.com/systemjs-plugin-babel/-/systemjs-plugin-babel-0.0.17.tgz#66561e4fb0135328d5a03d9613ce52da7b101c8b"
+
 systemjs@^0.19.41:
   version "0.19.41"
   resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-0.19.41.tgz#835d2c0f10bf403b551fedc875f84bb44a02c4eb"
