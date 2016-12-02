@@ -39,9 +39,24 @@ var log = function log(obj) {
  */
 var getDirectories = function getDirectories(srcpath) {
     return pfs.readdir(srcpath).then(function (dirs) {
-        return Promise.all(dirs.filter(function (file) {
+        return dirs.filter(function (file) {
             return fs.statSync(path.join(srcpath, file)).isDirectory();
+        });
+    }).then(function (dirs) {
+        return Promise.all(dirs.map(function (dir) {
+            if (dir.startsWith('@')) {
+                return getDirectories(path.join(srcpath, dir)).then(function (subdirs) {
+                    return subdirs.map(function (subdir) {
+                        return path.join(dir, subdir);
+                    });
+                });
+            } else {
+                return dir;
+            }
         }));
+    }).then(function (dirs) {
+        // Flatten array in case there are scoped packages that produce a nested array
+        return [].concat.apply([], dirs);
     });
 };
 
