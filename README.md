@@ -18,6 +18,7 @@ The easiest way to include modules in SystemJS is *currently* through JSPM. This
 - [ ] Allow simple local overrides
 - [ ] Use JSPM overrides
 - [ ] Allow dependency filtering (so we don't include deps meant for just the server)
+- [ ] Provide CLI flag to optimize generated.config.js
 - [ ] Allow configurability
 - [ ] Make more robust
 
