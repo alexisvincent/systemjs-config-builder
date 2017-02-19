@@ -8,6 +8,12 @@
         window.onload = () => {
             SystemJS.import('app.ts');
         }
+
+        window.data = {
+          title: 'dsfsdf',
+          short: ''
+        }
+
     </script>
 </head>
 
@@ -16,5 +22,19 @@
         Loading...
     </test-app>
 </body>
+
+
+<div>Welcome to {{title}}</div>
+
+<div id="galary"></div>
+<script>
+    component('mosaic-gallery').then(gallary => {
+      gallary({
+        to: 'galary',
+        className: ''
+      })
+    })
+</script>
+
 
 </html>

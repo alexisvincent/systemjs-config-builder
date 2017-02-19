@@ -179,8 +179,6 @@ SystemJS.config({
     "rxjs": "nm:rxjs",
     "setprototypeof": "nm:setprototypeof",
     "sha.js": "nm:sha.js",
-    "source-map": "nm:source-map",
-    "source-map-support": "nm:source-map-support",
     "statuses": "nm:statuses",
     "stream-browserify": "nm:stream-browserify",
     "stream-connect": "nm:stream-connect",
@@ -4213,39 +4211,6 @@ SystemJS.config({
       "main": "index.js",
       "format": "cjs"
     },
-    "nm:source-map": {
-      "meta": {
-        "*.json": {
-          "format": "json"
-        }
-      },
-      "main": "source-map.js",
-      "format": "cjs"
-    },
-    "nm:source-map-support": {
-      "meta": {
-        "*": {
-          "globals": {
-            "process": "process"
-          }
-        },
-        "*.json": {
-          "format": "json"
-        },
-        "source-map-support.js": {
-          "globals": {
-            "Buffer": "buffer/global"
-          }
-        },
-        "test.js": {
-          "globals": {
-            "Buffer": "buffer/global"
-          }
-        }
-      },
-      "main": "source-map-support.js",
-      "format": "cjs"
-    },
     "nm:statuses": {
       "meta": {
         "*.json": {
@@ -4603,32 +4568,16 @@ SystemJS.config({
     },
     "nm:typescript": {
       "map": {
-        "buffer": {
-          "browser": "@empty"
-        },
-        "fs": {
-          "browser": "@empty"
-        },
-        "os": {
-          "browser": "@empty"
-        },
-        "path": {
-          "browser": "@empty"
-        }
+        "buffer": "@empty",
+        "child_process": "@empty",
+        "fs": "@empty",
+        "path": "@empty",
+        "process": "@empty",
+        "readline": "@empty"
       },
       "meta": {
-        "*": {
-          "globals": {
-            "process": "process"
-          }
-        },
         "*.json": {
           "format": "json"
-        },
-        "lib/tsserver.js": {
-          "globals": {
-            "Buffer": "buffer/global"
-          }
         }
       },
       "main": "lib/typescript.js",

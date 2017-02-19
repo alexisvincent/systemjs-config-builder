@@ -1,138 +1,138 @@
 SystemJS.config({
   "map": {
-    "_stream_transform": "node_modules/readable-stream/transform",
-    "asn1.js": "node_modules/asn1.js",
-    "base64-js": "node_modules/base64-js",
-    "bn.js": "node_modules/bn.js",
-    "brorand": "node_modules/brorand",
-    "browserify-aes": "node_modules/browserify-aes",
-    "browserify-cipher": "node_modules/browserify-cipher",
-    "browserify-des": "node_modules/browserify-des",
-    "browserify-rsa": "node_modules/browserify-rsa",
-    "browserify-sign": "node_modules/browserify-sign",
-    "browserify-zlib": "node_modules/browserify-zlib",
-    "buffer": "node_modules/jspm-nodelibs-buffer",
-    "buffer-shims": "node_modules/buffer-shims",
-    "buffer-xor": "node_modules/buffer-xor",
-    "builtin-status-codes": "node_modules/builtin-status-codes",
-    "cipher-base": "node_modules/cipher-base",
-    "core-js": "node_modules/core-js",
-    "core-util-is": "node_modules/core-util-is",
-    "create-ecdh": "node_modules/create-ecdh",
-    "create-hash": "node_modules/create-hash",
-    "create-hmac": "node_modules/create-hmac",
-    "crypto-browserify": "node_modules/crypto-browserify",
-    "des.js": "node_modules/des.js",
-    "diffie-hellman": "node_modules/diffie-hellman",
-    "domain-browser": "node_modules/domain-browser",
-    "elliptic": "node_modules/elliptic",
-    "encoding": "node_modules/encoding",
-    "evp_bytestokey": "node_modules/evp_bytestokey",
-    "fbjs": "node_modules/fbjs",
-    "hash.js": "node_modules/hash.js",
-    "iconv-lite": "node_modules/iconv-lite",
-    "ieee754": "node_modules/ieee754",
-    "inherits": "node_modules/inherits",
-    "is-stream": "node_modules/is-stream",
-    "isarray": "node_modules/isarray",
-    "isomorphic-fetch": "node_modules/isomorphic-fetch",
-    "js-tokens": "node_modules/js-tokens",
-    "jspm-nodelibs-assert": "node_modules/jspm-nodelibs-assert",
-    "jspm-nodelibs-buffer": "node_modules/jspm-nodelibs-buffer",
-    "jspm-nodelibs-child_process": "node_modules/jspm-nodelibs-child_process",
-    "jspm-nodelibs-cluster": "node_modules/jspm-nodelibs-cluster",
-    "jspm-nodelibs-console": "node_modules/jspm-nodelibs-console",
-    "jspm-nodelibs-constants": "node_modules/jspm-nodelibs-constants",
-    "jspm-nodelibs-crypto": "node_modules/jspm-nodelibs-crypto",
-    "jspm-nodelibs-dgram": "node_modules/jspm-nodelibs-dgram",
-    "jspm-nodelibs-dns": "node_modules/jspm-nodelibs-dns",
-    "jspm-nodelibs-domain": "node_modules/jspm-nodelibs-domain",
-    "jspm-nodelibs-events": "node_modules/jspm-nodelibs-events",
-    "jspm-nodelibs-fs": "node_modules/jspm-nodelibs-fs",
-    "jspm-nodelibs-http": "node_modules/jspm-nodelibs-http",
-    "jspm-nodelibs-https": "node_modules/jspm-nodelibs-https",
-    "jspm-nodelibs-module": "node_modules/jspm-nodelibs-module",
-    "jspm-nodelibs-net": "node_modules/jspm-nodelibs-net",
-    "jspm-nodelibs-os": "node_modules/jspm-nodelibs-os",
-    "jspm-nodelibs-path": "node_modules/jspm-nodelibs-path",
-    "jspm-nodelibs-process": "node_modules/jspm-nodelibs-process",
-    "jspm-nodelibs-punycode": "node_modules/jspm-nodelibs-punycode",
-    "jspm-nodelibs-querystring": "node_modules/jspm-nodelibs-querystring",
-    "jspm-nodelibs-readline": "node_modules/jspm-nodelibs-readline",
-    "jspm-nodelibs-repl": "node_modules/jspm-nodelibs-repl",
-    "jspm-nodelibs-stream": "node_modules/jspm-nodelibs-stream",
-    "jspm-nodelibs-string_decoder": "node_modules/jspm-nodelibs-string_decoder",
-    "jspm-nodelibs-timers": "node_modules/jspm-nodelibs-timers",
-    "jspm-nodelibs-tls": "node_modules/jspm-nodelibs-tls",
-    "jspm-nodelibs-tty": "node_modules/jspm-nodelibs-tty",
-    "jspm-nodelibs-url": "node_modules/jspm-nodelibs-url",
-    "jspm-nodelibs-util": "node_modules/jspm-nodelibs-util",
-    "jspm-nodelibs-vm": "node_modules/jspm-nodelibs-vm",
-    "jspm-nodelibs-zlib": "node_modules/jspm-nodelibs-zlib",
-    "loose-envify": "node_modules/loose-envify",
-    "miller-rabin": "node_modules/miller-rabin",
-    "minimalistic-assert": "node_modules/minimalistic-assert",
-    "node-fetch": "node_modules/node-fetch",
-    "object-assign": "node_modules/object-assign",
-    "os-browserify": "node_modules/os-browserify",
-    "pako": "node_modules/pako",
-    "parse-asn1": "node_modules/parse-asn1",
-    "pbkdf2": "node_modules/pbkdf2",
-    "process": "node_modules/jspm-nodelibs-process",
-    "process-nextick-args": "node_modules/process-nextick-args",
-    "promise": "node_modules/promise",
-    "public-encrypt": "node_modules/public-encrypt",
-    "punycode": "node_modules/jspm-nodelibs-punycode",
-    "querystring": "node_modules/jspm-nodelibs-querystring",
-    "randombytes": "node_modules/randombytes",
-    "react": "node_modules/react",
-    "react-dom": "node_modules/react-dom",
-    "readable-stream": "node_modules/readable-stream",
-    "ripemd160": "node_modules/ripemd160",
-    "sha.js": "node_modules/sha.js",
-    "stream-browserify": "node_modules/stream-browserify",
-    "stream-http": "node_modules/stream-http",
-    "string_decoder": "node_modules/jspm-nodelibs-string_decoder",
-    "systemjs": "node_modules/systemjs",
-    "systemjs-nodelibs": "node_modules/systemjs-nodelibs",
-    "timers-browserify": "node_modules/timers-browserify",
-    "to-arraybuffer": "node_modules/to-arraybuffer",
-    "ua-parser-js": "node_modules/ua-parser-js",
-    "url": "node_modules/jspm-nodelibs-url",
-    "util-deprecate": "node_modules/util-deprecate",
-    "whatwg-fetch": "node_modules/whatwg-fetch",
-    "when": "node_modules/when",
-    "xtend": "node_modules/xtend",
-    "assert": "node_modules/jspm-nodelibs-assert",
-    "child_process": "node_modules/jspm-nodelibs-child_process",
-    "cluster": "node_modules/jspm-nodelibs-cluster",
-    "console": "node_modules/jspm-nodelibs-console",
-    "constants": "node_modules/jspm-nodelibs-constants",
-    "crypto": "node_modules/jspm-nodelibs-crypto",
-    "dgram": "node_modules/jspm-nodelibs-dgram",
-    "dns": "node_modules/jspm-nodelibs-dns",
-    "domain": "node_modules/jspm-nodelibs-domain",
-    "events": "node_modules/jspm-nodelibs-events",
-    "fs": "node_modules/jspm-nodelibs-fs",
-    "http": "node_modules/jspm-nodelibs-http",
-    "https": "node_modules/jspm-nodelibs-https",
-    "module": "node_modules/jspm-nodelibs-module",
-    "net": "node_modules/jspm-nodelibs-net",
-    "os": "node_modules/jspm-nodelibs-os",
-    "path": "node_modules/jspm-nodelibs-path",
-    "readline": "node_modules/jspm-nodelibs-readline",
-    "repl": "node_modules/jspm-nodelibs-repl",
-    "stream": "node_modules/jspm-nodelibs-stream",
-    "sys": "node_modules/jspm-nodelibs-sys",
-    "timers": "node_modules/jspm-nodelibs-timers",
-    "tls": "node_modules/jspm-nodelibs-tls",
-    "tty": "node_modules/jspm-nodelibs-tty",
-    "util": "node_modules/jspm-nodelibs-util",
-    "vm": "node_modules/jspm-nodelibs-vm",
-    "zlib": "node_modules/jspm-nodelibs-zlib"
+    "_stream_transform": "nm:readable-stream/transform",
+    "asn1.js": "nm:asn1.js",
+    "base64-js": "nm:base64-js",
+    "bn.js": "nm:bn.js",
+    "brorand": "nm:brorand",
+    "browserify-aes": "nm:browserify-aes",
+    "browserify-cipher": "nm:browserify-cipher",
+    "browserify-des": "nm:browserify-des",
+    "browserify-rsa": "nm:browserify-rsa",
+    "browserify-sign": "nm:browserify-sign",
+    "browserify-zlib": "nm:browserify-zlib",
+    "buffer": "nm:jspm-nodelibs-buffer",
+    "buffer-shims": "nm:buffer-shims",
+    "buffer-xor": "nm:buffer-xor",
+    "builtin-status-codes": "nm:builtin-status-codes",
+    "cipher-base": "nm:cipher-base",
+    "core-js": "nm:core-js",
+    "core-util-is": "nm:core-util-is",
+    "create-ecdh": "nm:create-ecdh",
+    "create-hash": "nm:create-hash",
+    "create-hmac": "nm:create-hmac",
+    "crypto-browserify": "nm:crypto-browserify",
+    "des.js": "nm:des.js",
+    "diffie-hellman": "nm:diffie-hellman",
+    "domain-browser": "nm:domain-browser",
+    "elliptic": "nm:elliptic",
+    "encoding": "nm:encoding",
+    "evp_bytestokey": "nm:evp_bytestokey",
+    "fbjs": "nm:fbjs",
+    "hash.js": "nm:hash.js",
+    "iconv-lite": "nm:iconv-lite",
+    "ieee754": "nm:ieee754",
+    "inherits": "nm:inherits",
+    "is-stream": "nm:is-stream",
+    "isarray": "nm:isarray",
+    "isomorphic-fetch": "nm:isomorphic-fetch",
+    "js-tokens": "nm:js-tokens",
+    "jspm-nodelibs-assert": "nm:jspm-nodelibs-assert",
+    "jspm-nodelibs-buffer": "nm:jspm-nodelibs-buffer",
+    "jspm-nodelibs-child_process": "nm:jspm-nodelibs-child_process",
+    "jspm-nodelibs-cluster": "nm:jspm-nodelibs-cluster",
+    "jspm-nodelibs-console": "nm:jspm-nodelibs-console",
+    "jspm-nodelibs-constants": "nm:jspm-nodelibs-constants",
+    "jspm-nodelibs-crypto": "nm:jspm-nodelibs-crypto",
+    "jspm-nodelibs-dgram": "nm:jspm-nodelibs-dgram",
+    "jspm-nodelibs-dns": "nm:jspm-nodelibs-dns",
+    "jspm-nodelibs-domain": "nm:jspm-nodelibs-domain",
+    "jspm-nodelibs-events": "nm:jspm-nodelibs-events",
+    "jspm-nodelibs-fs": "nm:jspm-nodelibs-fs",
+    "jspm-nodelibs-http": "nm:jspm-nodelibs-http",
+    "jspm-nodelibs-https": "nm:jspm-nodelibs-https",
+    "jspm-nodelibs-module": "nm:jspm-nodelibs-module",
+    "jspm-nodelibs-net": "nm:jspm-nodelibs-net",
+    "jspm-nodelibs-os": "nm:jspm-nodelibs-os",
+    "jspm-nodelibs-path": "nm:jspm-nodelibs-path",
+    "jspm-nodelibs-process": "nm:jspm-nodelibs-process",
+    "jspm-nodelibs-punycode": "nm:jspm-nodelibs-punycode",
+    "jspm-nodelibs-querystring": "nm:jspm-nodelibs-querystring",
+    "jspm-nodelibs-readline": "nm:jspm-nodelibs-readline",
+    "jspm-nodelibs-repl": "nm:jspm-nodelibs-repl",
+    "jspm-nodelibs-stream": "nm:jspm-nodelibs-stream",
+    "jspm-nodelibs-string_decoder": "nm:jspm-nodelibs-string_decoder",
+    "jspm-nodelibs-timers": "nm:jspm-nodelibs-timers",
+    "jspm-nodelibs-tls": "nm:jspm-nodelibs-tls",
+    "jspm-nodelibs-tty": "nm:jspm-nodelibs-tty",
+    "jspm-nodelibs-url": "nm:jspm-nodelibs-url",
+    "jspm-nodelibs-util": "nm:jspm-nodelibs-util",
+    "jspm-nodelibs-vm": "nm:jspm-nodelibs-vm",
+    "jspm-nodelibs-zlib": "nm:jspm-nodelibs-zlib",
+    "loose-envify": "nm:loose-envify",
+    "miller-rabin": "nm:miller-rabin",
+    "minimalistic-assert": "nm:minimalistic-assert",
+    "node-fetch": "nm:node-fetch",
+    "object-assign": "nm:object-assign",
+    "os-browserify": "nm:os-browserify",
+    "pako": "nm:pako",
+    "parse-asn1": "nm:parse-asn1",
+    "pbkdf2": "nm:pbkdf2",
+    "process": "nm:jspm-nodelibs-process",
+    "process-nextick-args": "nm:process-nextick-args",
+    "promise": "nm:promise",
+    "public-encrypt": "nm:public-encrypt",
+    "punycode": "nm:jspm-nodelibs-punycode",
+    "querystring": "nm:jspm-nodelibs-querystring",
+    "randombytes": "nm:randombytes",
+    "react": "nm:react",
+    "react-dom": "nm:react-dom",
+    "readable-stream": "nm:readable-stream",
+    "ripemd160": "nm:ripemd160",
+    "sha.js": "nm:sha.js",
+    "stream-browserify": "nm:stream-browserify",
+    "stream-http": "nm:stream-http",
+    "string_decoder": "nm:jspm-nodelibs-string_decoder",
+    "systemjs": "nm:systemjs",
+    "systemjs-nodelibs": "nm:systemjs-nodelibs",
+    "timers-browserify": "nm:timers-browserify",
+    "to-arraybuffer": "nm:to-arraybuffer",
+    "ua-parser-js": "nm:ua-parser-js",
+    "url": "nm:jspm-nodelibs-url",
+    "util-deprecate": "nm:util-deprecate",
+    "whatwg-fetch": "nm:whatwg-fetch",
+    "when": "nm:when",
+    "xtend": "nm:xtend",
+    "assert": "nm:jspm-nodelibs-assert",
+    "child_process": "nm:jspm-nodelibs-child_process",
+    "cluster": "nm:jspm-nodelibs-cluster",
+    "console": "nm:jspm-nodelibs-console",
+    "constants": "nm:jspm-nodelibs-constants",
+    "crypto": "nm:jspm-nodelibs-crypto",
+    "dgram": "nm:jspm-nodelibs-dgram",
+    "dns": "nm:jspm-nodelibs-dns",
+    "domain": "nm:jspm-nodelibs-domain",
+    "events": "nm:jspm-nodelibs-events",
+    "fs": "nm:jspm-nodelibs-fs",
+    "http": "nm:jspm-nodelibs-http",
+    "https": "nm:jspm-nodelibs-https",
+    "module": "nm:jspm-nodelibs-module",
+    "net": "nm:jspm-nodelibs-net",
+    "os": "nm:jspm-nodelibs-os",
+    "path": "nm:jspm-nodelibs-path",
+    "readline": "nm:jspm-nodelibs-readline",
+    "repl": "nm:jspm-nodelibs-repl",
+    "stream": "nm:jspm-nodelibs-stream",
+    "sys": "nm:jspm-nodelibs-sys",
+    "timers": "nm:jspm-nodelibs-timers",
+    "tls": "nm:jspm-nodelibs-tls",
+    "tty": "nm:jspm-nodelibs-tty",
+    "util": "nm:jspm-nodelibs-util",
+    "vm": "nm:jspm-nodelibs-vm",
+    "zlib": "nm:jspm-nodelibs-zlib"
   },
   "packages": {
-    "node_modules/asn1.js": {
+    "nm:asn1.js": {
       "map": {
         "./lib/asn1/base": "./lib/asn1/base/index.js",
         "./lib/asn1/constants": "./lib/asn1/constants/index.js",
@@ -159,17 +159,19 @@ SystemJS.config({
           }
         }
       },
-      "main": "lib/asn1.js"
+      "main": "lib/asn1.js",
+      "format": "cjs"
     },
-    "node_modules/base64-js": {
+    "nm:base64-js": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/bn.js": {
+    "nm:bn.js": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -190,9 +192,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "lib/bn.js"
+      "main": "lib/bn.js",
+      "format": "cjs"
     },
-    "node_modules/brorand": {
+    "nm:brorand": {
       "map": {
         "crypto": {
           "browser": "@empty"
@@ -203,9 +206,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/browserify-aes": {
+    "nm:browserify-aes": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -276,9 +280,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/browserify-cipher": {
+    "nm:browserify-cipher": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -294,9 +299,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/browserify-des": {
+    "nm:browserify-des": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -312,9 +318,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/browserify-rsa": {
+    "nm:browserify-rsa": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -330,9 +337,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/browserify-sign": {
+    "nm:browserify-sign": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -363,9 +371,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/browserify-zlib": {
+    "nm:browserify-zlib": {
       "map": {
         "./src": "./src/index.js"
       },
@@ -414,9 +423,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "src/index.js"
+      "main": "src/index.js",
+      "format": "cjs"
     },
-    "node_modules/buffer": {
+    "nm:buffer": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -432,9 +442,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/buffer-shims": {
+    "nm:buffer-shims": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -445,9 +456,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/buffer-xor": {
+    "nm:buffer-xor": {
       "map": {
         "./test": "./test/index.js",
         "./test/fixtures": "./test/fixtures.json"
@@ -467,9 +479,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/builtin-status-codes": {
+    "nm:builtin-status-codes": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -480,9 +493,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/cipher-base": {
+    "nm:cipher-base": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -498,9 +512,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/core-js": {
+    "nm:core-js": {
       "map": {
         "./build": "./build/index.js",
         "./core": "./core/index.js",
@@ -550,9 +565,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/core-util-is": {
+    "nm:core-util-is": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -568,9 +584,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "lib/util.js"
+      "main": "lib/util.js",
+      "format": "cjs"
     },
-    "node_modules/create-ecdh": {
+    "nm:create-ecdh": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -586,9 +603,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/create-hash": {
+    "nm:create-hash": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -614,9 +632,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/create-hmac": {
+    "nm:create-hmac": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -637,9 +656,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/crypto-browserify": {
+    "nm:crypto-browserify": {
       "map": {
         "./test": "./test/index.js",
         "crypto": {
@@ -687,9 +707,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/des.js": {
+    "nm:des.js": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -710,9 +731,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "lib/des.js"
+      "main": "lib/des.js",
+      "format": "cjs"
     },
-    "node_modules/diffie-hellman": {
+    "nm:diffie-hellman": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -733,17 +755,19 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/domain-browser": {
+    "nm:domain-browser": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/elliptic": {
+    "nm:elliptic": {
       "map": {
         "./lib/elliptic/curve": "./lib/elliptic/curve/index.js",
         "./lib/elliptic/ec": "./lib/elliptic/ec/index.js",
@@ -754,9 +778,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "lib/elliptic.js"
+      "main": "lib/elliptic.js",
+      "format": "cjs"
     },
-    "node_modules/encoding": {
+    "nm:encoding": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -772,9 +797,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "lib/encoding.js"
+      "main": "lib/encoding.js",
+      "format": "cjs"
     },
-    "node_modules/evp_bytestokey": {
+    "nm:evp_bytestokey": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -785,9 +811,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/fbjs": {
+    "nm:fbjs": {
       "meta": {
         "*": {
           "globals": {
@@ -798,17 +825,19 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/hash.js": {
+    "nm:hash.js": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "lib/hash.js"
+      "main": "lib/hash.js",
+      "format": "cjs"
     },
-    "node_modules/iconv-lite": {
+    "nm:iconv-lite": {
       "map": {
         "./encodings": "./encodings/index.js",
         "./extend-node": {
@@ -869,9 +898,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "lib/index.js"
+      "main": "lib/index.js",
+      "format": "cjs"
     },
-    "node_modules/ieee754": {
+    "nm:ieee754": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -882,9 +912,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/inherits": {
+    "nm:inherits": {
       "map": {
         "./inherits.js": {
           "browser": "./inherits_browser.js"
@@ -895,25 +926,28 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "inherits.js"
+      "main": "inherits.js",
+      "format": "cjs"
     },
-    "node_modules/is-stream": {
+    "nm:is-stream": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/isarray": {
+    "nm:isarray": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/isomorphic-fetch": {
+    "nm:isomorphic-fetch": {
       "map": {
         "./fetch-npm-node.js": {
           "browser": "./fetch-npm-browserify.js"
@@ -924,17 +958,19 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "fetch-npm-node.js"
+      "main": "fetch-npm-node.js",
+      "format": "cjs"
     },
-    "node_modules/js-tokens": {
+    "nm:js-tokens": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-assert": {
+    "nm:jspm-nodelibs-assert": {
       "map": {
         "./assert.js": {
           "node": "@node/assert"
@@ -945,9 +981,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "assert.js"
+      "main": "assert.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-buffer": {
+    "nm:jspm-nodelibs-buffer": {
       "map": {
         "./buffer.js": {
           "node": "@node/buffer",
@@ -958,9 +995,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-child_process": {
+    "nm:jspm-nodelibs-child_process": {
       "map": {
         "./child_process.js": {
           "node": "@node/child_process"
@@ -971,9 +1009,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "child_process.js"
+      "main": "child_process.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-cluster": {
+    "nm:jspm-nodelibs-cluster": {
       "map": {
         "./cluster.js": {
           "node": "@node/cluster"
@@ -984,9 +1023,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "cluster.js"
+      "main": "cluster.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-console": {
+    "nm:jspm-nodelibs-console": {
       "map": {
         "./console.js": {
           "node": "@node/console"
@@ -997,9 +1037,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "console.js"
+      "main": "console.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-constants": {
+    "nm:jspm-nodelibs-constants": {
       "map": {
         "./constants.js": {
           "node": "@node/constants"
@@ -1010,9 +1051,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "constants.js"
+      "main": "constants.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-crypto": {
+    "nm:jspm-nodelibs-crypto": {
       "map": {
         "./crypto.js": {
           "node": "@node/crypto",
@@ -1023,9 +1065,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-dgram": {
+    "nm:jspm-nodelibs-dgram": {
       "map": {
         "./dgram.js": {
           "node": "@node/dgram"
@@ -1036,9 +1079,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "dgram.js"
+      "main": "dgram.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-dns": {
+    "nm:jspm-nodelibs-dns": {
       "map": {
         "./dns.js": {
           "node": "@node/dns"
@@ -1049,9 +1093,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "dns.js"
+      "main": "dns.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-domain": {
+    "nm:jspm-nodelibs-domain": {
       "map": {
         "./domain.js": {
           "node": "@node/domain",
@@ -1062,9 +1107,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-events": {
+    "nm:jspm-nodelibs-events": {
       "map": {
         "./events.js": {
           "node": "@node/events"
@@ -1075,9 +1121,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "events.js"
+      "main": "events.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-fs": {
+    "nm:jspm-nodelibs-fs": {
       "map": {
         "./fs.js": {
           "node": "@node/fs"
@@ -1088,9 +1135,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "fs.js"
+      "main": "fs.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-http": {
+    "nm:jspm-nodelibs-http": {
       "map": {
         "./http.js": {
           "node": "@node/http",
@@ -1101,9 +1149,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-https": {
+    "nm:jspm-nodelibs-https": {
       "map": {
         "./https.js": {
           "node": "@node/https"
@@ -1114,9 +1163,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "https.js"
+      "main": "https.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-module": {
+    "nm:jspm-nodelibs-module": {
       "map": {
         "./module.js": {
           "node": "@node/module",
@@ -1128,9 +1178,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-net": {
+    "nm:jspm-nodelibs-net": {
       "map": {
         "./net.js": {
           "node": "@node/net"
@@ -1141,9 +1192,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "net.js"
+      "main": "net.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-os": {
+    "nm:jspm-nodelibs-os": {
       "map": {
         "./os.js": {
           "node": "@node/os",
@@ -1154,9 +1206,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-path": {
+    "nm:jspm-nodelibs-path": {
       "map": {
         "./path.js": {
           "node": "@node/path"
@@ -1172,9 +1225,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "path.js"
+      "main": "path.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-process": {
+    "nm:jspm-nodelibs-process": {
       "map": {
         "./process.js": {
           "node": "./process-node.js"
@@ -1190,9 +1244,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "process.js"
+      "main": "process.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-punycode": {
+    "nm:jspm-nodelibs-punycode": {
       "map": {
         "./punycode.js": {
           "node": "@node/punycode",
@@ -1203,9 +1258,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-querystring": {
+    "nm:jspm-nodelibs-querystring": {
       "map": {
         "./querystring.js": {
           "node": "@node/querystring"
@@ -1216,9 +1272,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "querystring.js"
+      "main": "querystring.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-readline": {
+    "nm:jspm-nodelibs-readline": {
       "map": {
         "./readline.js": {
           "node": "@node/readline"
@@ -1229,9 +1286,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "readline.js"
+      "main": "readline.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-repl": {
+    "nm:jspm-nodelibs-repl": {
       "map": {
         "./repl.js": {
           "node": "@node/repl"
@@ -1242,9 +1300,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "repl.js"
+      "main": "repl.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-stream": {
+    "nm:jspm-nodelibs-stream": {
       "map": {
         "./stream.js": {
           "node": "@node/stream",
@@ -1255,9 +1314,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-string_decoder": {
+    "nm:jspm-nodelibs-string_decoder": {
       "map": {
         "./string_decoder.js": {
           "node": "@node/string_decoder",
@@ -1268,9 +1328,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-timers": {
+    "nm:jspm-nodelibs-timers": {
       "map": {
         "./timers.js": {
           "node": "@node/timers",
@@ -1281,9 +1342,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-tls": {
+    "nm:jspm-nodelibs-tls": {
       "map": {
         "./tls.js": {
           "node": "@node/tls"
@@ -1294,9 +1356,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "tls.js"
+      "main": "tls.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-tty": {
+    "nm:jspm-nodelibs-tty": {
       "map": {
         "./tty.js": {
           "node": "@node/tty"
@@ -1307,9 +1370,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "tty.js"
+      "main": "tty.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-url": {
+    "nm:jspm-nodelibs-url": {
       "map": {
         "./url.js": {
           "node": "@node/url",
@@ -1320,9 +1384,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-util": {
+    "nm:jspm-nodelibs-util": {
       "map": {
         "./isBuffer.js": {
           "~node": "./isBufferBrowser.js"
@@ -1346,9 +1411,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "util.js"
+      "main": "util.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-vm": {
+    "nm:jspm-nodelibs-vm": {
       "map": {
         "./vm.js": {
           "node": "@node/vm"
@@ -1359,9 +1425,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "vm.js"
+      "main": "vm.js",
+      "format": "cjs"
     },
-    "node_modules/jspm-nodelibs-zlib": {
+    "nm:jspm-nodelibs-zlib": {
       "map": {
         "./zlib.js": {
           "node": "@node/zlib",
@@ -1372,9 +1439,10 @@ SystemJS.config({
         "*.json": {
           "format": "json"
         }
-      }
+      },
+      "format": "cjs"
     },
-    "node_modules/loose-envify": {
+    "nm:loose-envify": {
       "meta": {
         "*": {
           "globals": {
@@ -1385,25 +1453,28 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/miller-rabin": {
+    "nm:miller-rabin": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "lib/mr.js"
+      "main": "lib/mr.js",
+      "format": "cjs"
     },
-    "node_modules/minimalistic-assert": {
+    "nm:minimalistic-assert": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/node-fetch": {
+    "nm:node-fetch": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -1424,17 +1495,19 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/object-assign": {
+    "nm:object-assign": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/os-browserify": {
+    "nm:os-browserify": {
       "map": {
         "./main.js": {
           "browser": "./browser.js"
@@ -1445,9 +1518,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "main.js"
+      "main": "main.js",
+      "format": "cjs"
     },
-    "node_modules/pako": {
+    "nm:pako": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -1462,9 +1536,10 @@ SystemJS.config({
           "cjsRequireDetection": false
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/parse-asn1": {
+    "nm:parse-asn1": {
       "map": {
         "./test": "./test/index.js"
       },
@@ -1488,9 +1563,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/pbkdf2": {
+    "nm:pbkdf2": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -1511,9 +1587,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/process": {
+    "nm:process": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -1529,9 +1606,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/process-nextick-args": {
+    "nm:process-nextick-args": {
       "meta": {
         "*": {
           "globals": {
@@ -1542,9 +1620,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/promise": {
+    "nm:promise": {
       "map": {
         "./domains": "./domains/index.js",
         "./lib": "./lib/index.js",
@@ -1556,9 +1635,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/public-encrypt": {
+    "nm:public-encrypt": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -1600,17 +1680,19 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/punycode": {
+    "nm:punycode": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "punycode.js"
+      "main": "punycode.js",
+      "format": "cjs"
     },
-    "node_modules/querystring": {
+    "nm:querystring": {
       "map": {
         "./test": "./test/index.js"
       },
@@ -1619,9 +1701,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/randombytes": {
+    "nm:randombytes": {
       "map": {
         "./index.js": {
           "browser": "./browser.js"
@@ -1642,9 +1725,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/react": {
+    "nm:react": {
       "meta": {
         "*": {
           "globals": {
@@ -1661,9 +1745,10 @@ SystemJS.config({
           "cjsRequireDetection": false
         }
       },
-      "main": "react.js"
+      "main": "react.js",
+      "format": "cjs"
     },
-    "node_modules/react-dom": {
+    "nm:react-dom": {
       "meta": {
         "*": {
           "globals": {
@@ -1680,9 +1765,10 @@ SystemJS.config({
           "cjsRequireDetection": false
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/readable-stream": {
+    "nm:readable-stream": {
       "map": {
         "util": {
           "browser": "@empty"
@@ -1708,9 +1794,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "readable.js"
+      "main": "readable.js",
+      "format": "cjs"
     },
-    "node_modules/ripemd160": {
+    "nm:ripemd160": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -1721,9 +1808,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "lib/ripemd160.js"
+      "main": "lib/ripemd160.js",
+      "format": "cjs"
     },
-    "node_modules/sha.js": {
+    "nm:sha.js": {
       "meta": {
         "*": {
           "globals": {
@@ -1774,9 +1862,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/stream-browserify": {
+    "nm:stream-browserify": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -1787,9 +1876,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/stream-http": {
+    "nm:stream-http": {
       "map": {
         "./test/server": "./test/server/index.js"
       },
@@ -1868,9 +1958,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/string_decoder": {
+    "nm:string_decoder": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -1881,9 +1972,10 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/systemjs": {
+    "nm:systemjs": {
       "meta": {
         "*": {
           "globals": {
@@ -1907,17 +1999,19 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/systemjs-nodelibs": {
+    "nm:systemjs-nodelibs": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/timers-browserify": {
+    "nm:timers-browserify": {
       "meta": {
         "*": {
           "globals": {
@@ -1928,9 +2022,10 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "main.js"
+      "main": "main.js",
+      "format": "cjs"
     },
-    "node_modules/to-arraybuffer": {
+    "nm:to-arraybuffer": {
       "meta": {
         "*.json": {
           "format": "json"
@@ -1946,25 +2041,28 @@ SystemJS.config({
           }
         }
       },
-      "main": "index.js"
+      "main": "index.js",
+      "format": "cjs"
     },
-    "node_modules/ua-parser-js": {
+    "nm:ua-parser-js": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "src/ua-parser.js"
+      "main": "src/ua-parser.js",
+      "format": "cjs"
     },
-    "node_modules/url": {
+    "nm:url": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "url.js"
+      "main": "url.js",
+      "format": "cjs"
     },
-    "node_modules/util-deprecate": {
+    "nm:util-deprecate": {
       "map": {
         "./node.js": {
           "browser": "./browser.js"
@@ -1975,17 +2073,19 @@ SystemJS.config({
           "format": "json"
         }
       },
-      "main": "node.js"
+      "main": "node.js",
+      "format": "cjs"
     },
-    "node_modules/whatwg-fetch": {
+    "nm:whatwg-fetch": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "fetch.js"
+      "main": "fetch.js",
+      "format": "cjs"
     },
-    "node_modules/when": {
+    "nm:when": {
       "map": {
         "vertx": {
           "browser": "@empty"
@@ -2013,15 +2113,20 @@ SystemJS.config({
           "cjsRequireDetection": false
         }
       },
-      "main": "when.js"
+      "main": "when.js",
+      "format": "cjs"
     },
-    "node_modules/xtend": {
+    "nm:xtend": {
       "meta": {
         "*.json": {
           "format": "json"
         }
       },
-      "main": "immutable.js"
+      "main": "immutable.js",
+      "format": "cjs"
     }
+  },
+  "paths": {
+    "nm:": "node_modules/"
   }
 })
